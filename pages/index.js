@@ -30,7 +30,10 @@ export default function Home() {
             <h1 className='text-xl font-burtons'>developedbyLS</h1>
             <ul className='flex items-center'> 
               <li>
-                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl'/>
+              <BsFillMoonStarsFill
+                  onClick={() => setDarkMode(!darkMode)}
+                  className=" cursor-pointer text-2xl"
+                />
               </li>
               <li>
                 <a 
