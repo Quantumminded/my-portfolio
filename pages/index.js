@@ -129,8 +129,6 @@ export default function Home() {
               <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
               <p className="text-gray-800 py-1">Photoshop</p>
               <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
             </div>
           </div>
         </section>
