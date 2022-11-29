@@ -56,7 +56,7 @@ export default function Home() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
               quo enim, quidem libero est necessitatibus asperiores dolorum eos
               dolore pariatur maxime commodi ullam culpa, provident eius,
-              explicabo minima nobis consectetur?
+              explicabo minima nobis consectetur.
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
