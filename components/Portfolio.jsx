@@ -39,17 +39,17 @@ const Portfolio = () => {
 
   return (
     <div id="portfolio" className="w-full">
-      <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
-        <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-500 font-bold">
+      <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left ">
+        <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-500 font-bold text-center">
           portfolio
         </h2>
-        <p className="py-4 max-w-lg">
+        <p className="py-4 mx-auto max-w-lg text-center">
           While only that hauntedtell many purple no lent cushions more heart.
           Soul cushions the still if i, hath lamplight mortals the rapping have
           me and.
         </p>
 
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-20">
           {portfolios.map(({ id, title, imageSrc, url }) => (
             <Link key={id} href={`/portfolio/${url}`}>
               <div className="cursor-pointer group shadow-md shadow-gray-600 overflow-hidden rounded-md">
