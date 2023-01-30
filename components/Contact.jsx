@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div id="contact" className="w-full">
       <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
-        <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-500 font-bold text-center">
+        <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-600 dark:text-teal-400 font-bold text-center">
           contact
         </h2>
 
