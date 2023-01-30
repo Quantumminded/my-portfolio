@@ -3,9 +3,6 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Image from "next/image";
 import deved from "../public/dev-ed-wave.png";
-import design from "../public/design.png";
-import code from "../public/code.png";
-import consulting from "../public/consulting.png";
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
@@ -14,8 +11,62 @@ import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 import { useState } from "react";
 
+import html from "../public/assets/experience/html.png";
+import css from "../public/assets/experience/css.png";
+import javascript from "../public/assets/experience/javascript.png";
+import reactImage from "../public/assets/experience/react.png";
+import nextjs from "../public/assets/experience/nextjs.png";
+import tailwind from "../public/assets/experience/html.png";
+import graphql from "../public/assets/experience/graphql.png";
+import node from "../public/assets/experience/node.png";
+import Portfolio from "../components/Portfolio";
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+
+  const experiences = [
+    {
+      id: 1,
+      title: "HTML",
+      src: html,
+    },
+    {
+      id: 2,
+      title: "CSS",
+      src: css,
+    },
+    {
+      id: 3,
+      title: "JavaScript",
+      src: javascript,
+    },
+    {
+      id: 4,
+      title: "React",
+      src: reactImage,
+    },
+    {
+      id: 5,
+      title: "Next JS",
+      src: nextjs,
+    },
+    {
+      id: 6,
+      title: "Tailwind",
+      src: tailwind,
+    },
+    {
+      id: 7,
+      title: "GraphQL",
+      src: graphql,
+    },
+    {
+      id: 8,
+      title: "Node JS",
+      src: node,
+    },
+  ];
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -53,10 +104,14 @@ export default function Home() {
               Full Stack Web Developer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-              quo enim, quidem libero est necessitatibus asperiores dolorum eos
-              dolore pariatur maxime commodi ullam culpa, provident eius,
-              explicabo minima nobis consectetur.
+              A driven full-stack developer with a passion for creating
+              intuitive and impactful web applications. With a background in
+              customer service management, I bring a unique perspective to my
+              work, honing strong problem-solving and communication skills.
+              After completing a full-stack coding bootcamp, I am eager to apply
+              my technical knowledge and drive to real-world projects. My goal
+              is to use my skills to create user-centered digital solutions that
+              make a meaningful impact.
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
@@ -71,6 +126,8 @@ export default function Home() {
             <Image src={deved} layout="fill" objectFit="cover" />
           </div>
         </section>
+
+        {/* SKILL SECTION */}
         <section>
           <div>
             <h3 className="text-3xl py-1 dark:text-white">Skills</h3>
@@ -87,53 +144,34 @@ export default function Home() {
               programming.
             </p>
           </div>
-          <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 ">
-              <Image src={design} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2  ">
-                Beautiful Designs
-              </h3>
-              <p className="py-2">
-                Creating elegant designs suited for your needs following core
-                design theory.
-              </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={code} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">
-                Code your dream project
-              </h3>
-              <p className="py-2">
-                Do you have an idea for your next great website? Let's make it a
-                reality.
-              </p>
-              <h4 className="py-4 text-teal-600">Coding Tools I Use</h4>
-              <p className="text-gray-800 py-1">Html</p>
-              <p className="text-gray-800 py-1">Css</p>
-              <p className="text-gray-800 py-1">JS</p>
-              <p className="text-gray-800 py-1">React</p>
-              <p className="text-gray-800 py-1">Node</p>
-              <p className="text-gray-800 py-1">Express</p>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={consulting} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">Consulting</h3>
-              <p className="py-2">
-                Are you interested in feedback for your current project? I can
-                give you tips and tricks to level it up.
-              </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
+
+
+          {/* CARDS SECTION */}
+          <div id="experience" className="w-full">
+            <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
+              <div className="grid lg:grid-cols-4 gap-8">
+                {experiences.map(({ id, title, src }) => (
+                  <div
+                    key={id}
+                    className="flex flex-col lg:flex-row gap-10 lg:gap-0 items-center justify-between p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300
+              odd:shadow-rose-400 even:shadow-blue-400"
+                  >
+                    <Image src={src} width="64px" height="64px" alt={title} />
+                    <h3 className="font-light">{title}</h3>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
+
+        {/* PORFOLIO SECTION */}
         <section className="py-10">
-          <div>
+          <Portfolio />
+
+
+
+          {/* <div>
             <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as a freelance designer and
@@ -203,7 +241,7 @@ export default function Home() {
                 src={web6}
               />
             </div>
-          </div>
+          </div> */}
         </section>
       </main>
     </div>
