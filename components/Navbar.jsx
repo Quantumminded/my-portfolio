@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
+
 import {
   FaBars,
   FaTimes,
@@ -13,6 +14,7 @@ import {
 const Navbar = () => {
   const [navigation, setNavigation] = useState(false);
   const [pageScroll, setPageScroll] = useState(false);
+  
 
   useEffect(() => {
     const sub = window.addEventListener("scroll", () =>
