@@ -2,14 +2,7 @@ import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Image from "next/image";
-import Link from "next/link";
 import deved from "../public/dev-ed-wave.png";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
 import { useState } from "react";
 
 import html from "../public/assets/experience/html.png";
@@ -20,8 +13,8 @@ import nextjs from "../public/assets/experience/nextjs.png";
 import tailwind from "../public/assets/experience/html.png";
 import graphql from "../public/assets/experience/graphql.png";
 import node from "../public/assets/experience/node.png";
+// import components
 import Portfolio from "../components/Portfolio";
-import Navbar from "../components/Navbar";
 import Experience from "../components/Experience";
 import Contact from "../components/Contact";
 
@@ -128,7 +121,7 @@ export default function Home() {
               <AiFillGithub />
             </a>
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
+          <div className="relative mx-auto bg-gradient-to-b dark:from-teal-500 from-blue-600 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image src={deved} layout="fill" objectFit="cover" />
           </div>
         </section>
@@ -144,7 +137,7 @@ export default function Home() {
         </section>
 
         {/* CONTACT FORM */}
-        <section className="py-10">
+        <section className="">
           <Contact />
         </section>
 

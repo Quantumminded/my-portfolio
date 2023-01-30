@@ -60,7 +60,7 @@ const Experience = () => {
         <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-600 dark:text-teal-400 font-bold text-center">
           experience
         </h2>
-        <p className="py-4 mx-auto max-w-lg">
+        <p className="py-4 mx-auto max-w-lg dark:text-gray-200">
           While only that hauntedtell many purple no lent cushions more heart.
           Soul cushions the still if i, hath lamplight mortals the rapping have
           me and.
@@ -70,7 +70,7 @@ const Experience = () => {
           {experiences.map(({ id, title, src }) => (
             <div
               key={id}
-              className="flex flex-col lg:flex-row gap-10 lg:gap-0 items-center justify-between p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300
+              className="dark:bg-white flex flex-col lg:flex-row gap-10 lg:gap-0 items-center justify-between p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300
               odd:shadow-rose-400 even:shadow-blue-400"
             >
               <Image src={src} width="64px" height="64px" alt={title} />

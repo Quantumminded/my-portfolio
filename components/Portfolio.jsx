@@ -43,7 +43,7 @@ const Portfolio = () => {
         <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-600 dark:text-teal-400 font-bold text-center">
           portfolio
         </h2>
-        <p className="py-4 mx-auto max-w-lg text-center">
+        <p className="py-4 mx-auto max-w-lg text-center dark:text-gray-200">
           While only that hauntedtell many purple no lent cushions more heart.
           Soul cushions the still if i, hath lamplight mortals the rapping have
           me and.
@@ -69,7 +69,7 @@ const Portfolio = () => {
 
         <div className="flex items-center justify-center">
           <Link href="/portfolio">
-            <div className="group flex items-center justify-center my-8 bg-blue-500 text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer">
+            <div className="group flex items-center justify-center my-8 bg-blue-500 dark:bg-teal-400 text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer">
               all projects
               <span className="-rotate-90 duration-100 ease-in group-hover:translate-x-5">
                 <MdExpandMore size={25} />

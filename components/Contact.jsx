@@ -12,7 +12,7 @@ const Contact = () => {
           contact
         </h2>
 
-        <div className="flex flex-col md:flex-row gap-8 shadow-xl shadow-blue-300 bg-white mt-4">
+        <div className="flex flex-col md:flex-row gap-8 shadow-xl shadow-blue-300 dark:shadow-teal-500 bg-white mt-4">
           <div className="w-full md:w-1/2 h-full rounded-xl p-4">
             <Image
               src={contactus}
@@ -26,10 +26,10 @@ const Contact = () => {
             </p>
 
             <div className="grid grid-cols-2 mx-auto w-4/5 gap-10">
-              <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer">
+              <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-500 hover:scale-105 duration-200 p-3 cursor-pointer">
                 <FaLinkedin size={25} />
               </div>
-              <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer">
+              <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-500 hover:scale-105 duration-200 p-3 cursor-pointer">
                 <FaGithub size={25} />
               </div>
             </div>
@@ -87,7 +87,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-center justify-center">
-                  <button className="my-8 bg-blue-500 text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer hover:scale-105 duration-200">
+                  <button className="my-8 bg-blue-500 dark:bg-teal-400 text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer hover:scale-105 duration-200">
                     send message
                   </button>
                 </div>
