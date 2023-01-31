@@ -13,21 +13,21 @@ const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      title: "react weather app",
+      title: "GlobalSpeak",
       imageSrc: reactWeather,
-      url: "react-weather",
+      url: "https://rococo-nougat-fa00e0.netlify.app/",
     },
     {
       id: 2,
-      title: "install node",
+      title: "Pokedex",
       imageSrc: installNode,
-      url: "install-node",
+      url: "https://sparkling-manatee-860534.netlify.app/",
     },
     {
       id: 3,
-      title: "use state explained",
+      title: "Todo's List",
       imageSrc: usestate,
-      url: "use-state-hook",
+      url: "https://cosmic-valkyrie-65c0e4.netlify.app/",
     },
     {
       id: 4,
@@ -51,7 +51,7 @@ const Portfolio = () => {
 
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-20">
           {portfolios.map(({ id, title, imageSrc, url }) => (
-            <Link key={id} href={`/portfolio/${url}`}>
+            <Link key={id} href={`${url}`}>
               <div className="cursor-pointer group shadow-md shadow-gray-600 overflow-hidden rounded-md">
                 <Image
                   src={imageSrc}
