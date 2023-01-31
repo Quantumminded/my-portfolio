@@ -27,7 +27,7 @@ const Portfolio = () => {
       id: 3,
       title: "Todo's List",
       imageSrc: usestate,
-      url: "https://cosmic-valkyrie-65c0e4.netlify.app/",
+      url: "https://to-dos-listss.netlify.app/",
     },
     {
       id: 4,
