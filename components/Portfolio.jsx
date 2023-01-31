@@ -15,7 +15,7 @@ const Portfolio = () => {
       id: 1,
       title: "GlobalSpeak",
       imageSrc: reactWeather,
-      url: "https://rococo-nougat-fa00e0.netlify.app/",
+      url: "https://globalspeak.netlify.app/",
     },
     {
       id: 2,
