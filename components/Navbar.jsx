@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
+import { BsFillMoonStarsFill } from "react-icons/bs";
+
 
 import {
   FaBars,
@@ -14,6 +16,7 @@ import {
 const Navbar = () => {
   const [navigation, setNavigation] = useState(false);
   const [pageScroll, setPageScroll] = useState(false);
+  
   
 
   useEffect(() => {
@@ -69,6 +72,10 @@ const Navbar = () => {
                 </li>
               </Link>
             ))}
+            <BsFillMoonStarsFill
+                  onClick={() => setDarkMode(!darkMode)}
+                  className=" cursor-pointer text-2xl"
+                />
           </ul>
 
           {!navigation && (
