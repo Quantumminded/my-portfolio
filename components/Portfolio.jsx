@@ -2,10 +2,13 @@ import React from "react";
 
 import { MdExpandMore } from "react-icons/md";
 
-import installNode from "../public/assets/portfolio/installNode.jpg";
-import reactParallax from "../public/assets/portfolio/reactParallax.jpg";
-import usestate from "../public/assets/portfolio/usestate.jpg";
-import reactWeather from "../public/assets/portfolio/reactWeather.jpg";
+import global from "../public/assets/portfolio/global.png"
+import pokedex from "../public/assets/portfolio/pokedex.png"
+import todos from "../public/assets/portfolio/todos.png"
+import valpiccola from "../public/assets/portfolio/valpiccola.png"
+
+
+
 import Link from "next/link";
 import Image from "next/image";
 
@@ -14,26 +17,26 @@ const Portfolio = () => {
     {
       id: 1,
       title: "GlobalSpeak",
-      imageSrc: reactWeather,
+      imageSrc: global,
       url: "https://globalspeak.netlify.app/",
     },
     {
       id: 2,
       title: "Pokedex",
-      imageSrc: installNode,
+      imageSrc: pokedex,
       url: "https://sparkling-manatee-860534.netlify.app/",
     },
     {
       id: 3,
       title: "Todo's List",
-      imageSrc: usestate,
+      imageSrc: todos,
       url: "https://to-dos-listss.netlify.app/",
     },
     {
       id: 4,
-      title: "react parallax scroll",
-      imageSrc: reactParallax,
-      url: "react-parallax",
+      title: "Val piccola",
+      imageSrc: valpiccola,
+      url: "https://www.valpiccola.com/it",
     },
   ];
 
@@ -56,7 +59,7 @@ const Portfolio = () => {
                 <Image
                   src={imageSrc}
                   alt={title}
-                  className="rounded-md duration-200 
+                  className="rounded-md duration-200
                   hover:scale-110"
                 />
                 <h2 className="text-center text-base capitalize my-4 font-light duration-200 group-hover:underline underline-offset-4">
