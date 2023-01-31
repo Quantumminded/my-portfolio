@@ -62,6 +62,15 @@ const Portfolio = () => {
                 <h2 className="text-center text-base capitalize my-4 font-light duration-200 group-hover:underline underline-offset-4">
                   {title}
                 </h2>
+                <h3 className="text-center my-4">Description</h3>
+                <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quis ut quo dignissimos consequatur nam dolore deleniti, </p>
+                <h3 className="text-center my-3">Stack used</h3>
+                <ul className="text-center mb-5">
+                  <li>Html</li>
+                  <li>CSS</li>
+                  <li>Tailwind</li>
+                  <li>React</li>
+                </ul>
               </div>
             </Link>
           ))}
