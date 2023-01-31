@@ -58,7 +58,7 @@ const Experience = () => {
     <div id="experience" className="w-full">
       <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
         <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-600 dark:text-teal-400 font-bold text-center">
-          experience
+          skills
         </h2>
         <p className="py-4 mx-auto max-w-lg dark:text-gray-200">
           While only that hauntedtell many purple no lent cushions more heart.
