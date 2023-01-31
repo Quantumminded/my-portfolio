@@ -18,6 +18,7 @@ import {
   FaGithub,
   FaLinkedin,
 } from "react-icons/fa";
+import Me from "../components/Me";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -184,6 +185,11 @@ export default function Home() {
         {/* SKILL SECTION */}
         <section>
           <Experience />
+        </section>
+
+        {/* ME SECTION */}
+        <section>
+          <Me />
         </section>
 
         {/* PORFOLIO SECTION */}
