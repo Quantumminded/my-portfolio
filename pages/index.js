@@ -2,9 +2,6 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Head from "next/head";
 
-
-
-
 // import components
 import Portfolio from "../components/Portfolio";
 import Skills from "../components/Skills";
@@ -12,13 +9,10 @@ import Contact from "../components/Contact";
 import About from "../components/About";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 
-import {
-  FaBars,
-  FaTimes,
-  FaGithub,
-  FaLinkedin,
-} from "react-icons/fa";
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import Me from "../components/Me";
+import logo from "../public/logo.mp4"
+
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -64,7 +58,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
       {/* NAVBAR SECTION */}
       <nav className="mb-20 flex dark:text-white">
         <div
@@ -73,11 +66,20 @@ export default function Home() {
           }`}
         >
           <div className="flex justify-between items-center w-full h-full max-w-screen-xl mx-auto p-4">
-            <Link href="/#home">
-              <h1 className="text-3xl lg:text-4xl font-bold uppercase underline underline-offset-2 tracking-wider cursor-pointer">
+            {/* <Link href="/#home"> */}
+              {/* <h1 className="text-3xl lg:text-4xl font-bold uppercase underline underline-offset-2 tracking-wider cursor-pointer">
                 Luca Stringhetti
-              </h1>
-            </Link>
+              </h1> */}
+              <video
+                className="w-32 h-32"
+                src={ logo }
+                autoPlay
+                loop
+                muted
+              />
+            {/* </Link> */}
+
+            
 
             <div>
               <ul className="hidden md:flex">
@@ -150,7 +152,6 @@ export default function Home() {
                       </li>
                     </Link>
                   ))}
-                 
                 </ul>
 
                 <div>
@@ -162,10 +163,11 @@ export default function Home() {
                       <FaGithub size={25} />
                     </div>
                     <div className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer">
-                    <BsFillMoonStarsFill size={25}
-                      onClick={() => setDarkMode(!darkMode)}
-                      className=" cursor-pointer text-2xl"
-                    />
+                      <BsFillMoonStarsFill
+                        size={25}
+                        onClick={() => setDarkMode(!darkMode)}
+                        className=" cursor-pointer text-2xl"
+                      />
                     </div>
                   </div>
                 </div>
@@ -176,9 +178,8 @@ export default function Home() {
       </nav>
 
       <main className="bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
-
         {/* ABOUT SECTION */}
-        <section >
+        <section>
           <About />
         </section>
 
@@ -201,7 +202,6 @@ export default function Home() {
         <section>
           <Contact />
         </section>
-
       </main>
     </div>
   );
