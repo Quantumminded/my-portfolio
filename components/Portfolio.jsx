@@ -7,6 +7,16 @@ import pokedex from "../public/assets/portfolio/pokedex.png"
 import todos from "../public/assets/portfolio/todos.png"
 import valpiccola from "../public/assets/portfolio/valpiccola.png"
 
+import html from "../public/assets/experience/html.png";
+import css from "../public/assets/experience/css.png";
+import javascript from "../public/assets/experience/javascript.png";
+import reactImage from "../public/assets/experience/react.png";
+import nextjs from "../public/assets/experience/nextjs.png";
+import tailwind from "../public/assets/experience/tailwind.png";
+import graphql from "../public/assets/experience/graphql.png";
+import node from "../public/assets/experience/node.png";
+
+
 
 
 import Link from "next/link";
@@ -39,6 +49,7 @@ const Portfolio = () => {
       url: "https://www.valpiccola.com/it",
     },
   ];
+  
 
   return (
     <div id="portfolio" className="w-full">
@@ -74,6 +85,21 @@ const Portfolio = () => {
                   <li>Tailwind</li>
                   <li>React</li>
                 </ul>
+                <div
+              key={id}
+              className="dark:bg-white flex flex-col lg:flex-row gap-10 lg:gap-0 items-center justify-between p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300
+              odd:shadow-rose-400 even:shadow-blue-400"
+            >
+              <Image src={html} width="64px" height="64px" alt={title} />
+              <Image src={css} width="64px" height="64px" alt={title} />
+              <Image src={javascript} width="64px" height="64px" alt={title} />
+              <Image src={reactImage} width="64px" height="64px" alt={title} />
+              <Image src={nextjs} width="64px" height="64px" alt={title} />
+              <Image src={node} width="64px" height="64px" alt={title} />
+              <Image src={graphql} width="64px" height="64px" alt={title} />
+              <Image src={tailwind} width="64px" height="64px" alt={title} />
+              <h3 className="font-light">{title}</h3>
+            </div>
               </div>
             </Link>
           ))}
