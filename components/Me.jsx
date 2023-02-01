@@ -11,7 +11,7 @@ const Me = () => {
           me
         </h2>
 
-        <div className="shadow-xl shadow-blue-300 dark:shadow-teal-500 my-8 px-8 dark:text-gray-200">
+        <div className="shadow-xl shadow-blue-300 dark:shadow-teal-500 my-8 px-8 dark:bg-white rounded-3xl py-4">
           <p className="py-4 max-w-2xl mx-auto">
             Nepenthe above my pallas of rapping guessing shore. Then chamber
             midnight nevermore nevermore. Dared pallas nothing door me oer
