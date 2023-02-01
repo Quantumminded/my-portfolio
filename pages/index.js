@@ -68,7 +68,7 @@ export default function Home() {
       {/* NAVBAR SECTION */}
       <nav className="mb-20 flex dark:text-white">
         <div
-          className={`w-screen h-20 z-10 fixed bg-white text-black duration-300 ease-in ${
+          className={`w-full h-20 z-10 fixed bg-white text-black duration-300 ease-in ${
             pageScroll && "bg-black text-[#fff]"
           }`}
         >
