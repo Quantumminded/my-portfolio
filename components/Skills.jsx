@@ -10,7 +10,7 @@ import graphql from "../public/assets/experience/graphql.png";
 import node from "../public/assets/experience/node.png";
 import Image from "next/image";
 
-const Experience = () => {
+const Skills = () => {
   const experiences = [
     {
       id: 1,
@@ -83,4 +83,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Skills;

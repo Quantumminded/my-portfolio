@@ -7,7 +7,7 @@ import Head from "next/head";
 
 // import components
 import Portfolio from "../components/Portfolio";
-import Experience from "../components/Experience";
+import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 import About from "../components/About";
 import { BsFillMoonStarsFill } from "react-icons/bs";
@@ -184,7 +184,7 @@ export default function Home() {
 
         {/* SKILL SECTION */}
         <section>
-          <Experience />
+          <Skills />
         </section>
 
         {/* ME SECTION */}
