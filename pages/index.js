@@ -193,12 +193,12 @@ export default function Home() {
         </section>
 
         {/* PORFOLIO SECTION */}
-        <section className="py-10">
+        <section>
           <Portfolio />
         </section>
 
         {/* CONTACT FORM */}
-        <section className="">
+        <section>
           <Contact />
         </section>
 
