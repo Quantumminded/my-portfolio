@@ -2,10 +2,10 @@ import React from "react";
 
 import { MdExpandMore } from "react-icons/md";
 
-import global from "../public/assets/portfolio/global.png"
-import pokedex from "../public/assets/portfolio/pokedex.png"
-import todos from "../public/assets/portfolio/todos.png"
-import valpiccola from "../public/assets/portfolio/valpiccola.png"
+import global from "../public/assets/portfolio/global.png";
+import pokedex from "../public/assets/portfolio/pokedex.png";
+import todos from "../public/assets/portfolio/todos.png";
+import valpiccola from "../public/assets/portfolio/valpiccola.png";
 
 import html from "../public/assets/experience/html.png";
 import css from "../public/assets/experience/css.png";
@@ -15,9 +15,6 @@ import nextjs from "../public/assets/experience/nextjs.png";
 import tailwind from "../public/assets/experience/tailwind.png";
 import graphql from "../public/assets/experience/graphql.png";
 import node from "../public/assets/experience/node.png";
-
-
-
 
 import Link from "next/link";
 import Image from "next/image";
@@ -29,27 +26,30 @@ const Portfolio = () => {
       title: "GlobalSpeak",
       imageSrc: global,
       url: "https://globalspeak.netlify.app/",
+      stack: [reactImage, javascript, html],
     },
     {
       id: 2,
       title: "Pokedex",
       imageSrc: pokedex,
       url: "https://sparkling-manatee-860534.netlify.app/",
+      stack: [reactImage, javascript, html],
     },
     {
       id: 3,
       title: "Todo's List",
       imageSrc: todos,
       url: "https://to-dos-listss.netlify.app/",
+      stack: [reactImage, javascript, html],
     },
     {
       id: 4,
       title: "Val piccola",
       imageSrc: valpiccola,
       url: "https://www.valpiccola.com/it",
+      stack: [reactImage, javascript, html],
     },
   ];
-  
 
   return (
     <div id="portfolio" className="w-full">
@@ -64,7 +64,7 @@ const Portfolio = () => {
         </p>
 
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-20">
-          {portfolios.map(({ id, title, imageSrc, url }) => (
+          {portfolios.map(({ id, title, imageSrc, url, stack }) => (
             <Link key={id} href={`${url}`}>
               <div className="cursor-pointer group shadow-md shadow-gray-600 overflow-hidden rounded-md dark:bg-white">
                 <Image
@@ -77,29 +77,18 @@ const Portfolio = () => {
                   {title}
                 </h2>
                 <h3 className="text-center my-4">Description</h3>
-                <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quis ut quo dignissimos consequatur nam dolore deleniti, </p>
+                <p className="text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  quis ut quo dignissimos consequatur nam dolore deleniti,{" "}
+                </p>
                 <h3 className="text-center my-3">Stack used</h3>
-                <ul className="text-center mb-5">
-                  <li>Html</li>
-                  <li>CSS</li>
-                  <li>Tailwind</li>
-                  <li>React</li>
-                </ul>
-                <div
-              key={id}
-              className="dark:bg-white flex flex-col lg:flex-row gap-10 lg:gap-0 items-center justify-between p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300
-              odd:shadow-rose-400 even:shadow-blue-400"
-            >
-              <Image src={html} width="64px" height="64px" alt={title} />
-              <Image src={css} width="64px" height="64px" alt={title} />
-              <Image src={javascript} width="64px" height="64px" alt={title} />
-              <Image src={reactImage} width="64px" height="64px" alt={title} />
-              <Image src={nextjs} width="64px" height="64px" alt={title} />
-              <Image src={node} width="64px" height="64px" alt={title} />
-              <Image src={graphql} width="64px" height="64px" alt={title} />
-              <Image src={tailwind} width="64px" height="64px" alt={title} />
-              <h3 className="font-light">{title}</h3>
-            </div>
+                <div className="p-10 rounded-xl hover:scale-105 ease-in duration-300">
+                  {/* <Image src={stack} width="64px" height="64px" alt={title} /> */}
+                  {stack.map((item, index) => (
+          <Image key={index} src={item} width="64px" height="64px" alt={title} />
+        ))}
+              
+                </div>
               </div>
             </Link>
           ))}
