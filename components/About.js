@@ -3,15 +3,30 @@ import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import deved from "../public/dev-ed-wave.png";
 import Image from "next/image";
 
+import Typical from "react-typical";
+import { motion } from "framer-motion";
+import Typewriter from "typewriter-effect";
+
 const About = () => {
   return (
     <>
-      <div className="text-center py-10">
-        <h2 className="py-2 px-4 text-blue-600 dark:text-teal-400 text-4xl md:text-7xl tracking-wider uppercase font-bold text-center">
-          Luca Stringhetti
+      <div className="text-center py-20 px-20">
+        <h2 className=" text-blue-600 dark:text-teal-400 text-4xl md:text-6xl tracking-wider uppercase font-bold text-center">
+          Hello I'm 
+          <Typical steps={["Luca Stringhetti", 1000]} loop={1} />
         </h2>
-        <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-          Full Stack Web Developer
+        <h3 className="text-4xl dark:text-white font-bold">
+          <Typewriter
+            options={{
+              strings: [
+                "Front End Developer",
+                "Full Stack Developer",
+                "Mobile Developer",
+              ],
+              autoStart: true,
+              loop: true,
+            }}
+          />
         </h3>
         <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto px-5">
           A driven full-stack developer with a passion for creating intuitive
@@ -23,11 +38,10 @@ const About = () => {
           create user-centered digital solutions that make a meaningful impact.
         </p>
       </div>
-      
-      <div className="relative mx-auto bg-gradient-to-b dark:from-teal-500 from-blue-600 rounded-full w-80 h-80 overflow-hidden md:mt-10 md:h-96 md:w-96">
+
+      <div className="relative mx-auto bg-gradient-to-b dark:from-teal-500 from-blue-600 rounded-full w-80 h-80 overflow-hidden md:my-24 md:h-96 md:w-96">
         <Image src={deved} layout="fill" objectFit="cover" />
       </div>
-      
     </>
   );
 };
