@@ -26,28 +26,28 @@ const Portfolio = () => {
       title: "GlobalSpeak",
       imageSrc: global,
       url: "https://globalspeak.netlify.app/",
-      stack: [reactImage, javascript, html],
+      stack: [css, nextjs, html],
     },
     {
       id: 2,
       title: "Pokedex",
       imageSrc: pokedex,
       url: "https://sparkling-manatee-860534.netlify.app/",
-      stack: [reactImage, javascript, html],
+      stack: [reactImage, javascript, node],
     },
     {
       id: 3,
       title: "Todo's List",
       imageSrc: todos,
       url: "https://to-dos-listss.netlify.app/",
-      stack: [reactImage, javascript, html],
+      stack: [ javascript, html, css, tailwind]
     },
     {
       id: 4,
       title: "Val piccola",
       imageSrc: valpiccola,
       url: "https://www.valpiccola.com/it",
-      stack: [reactImage, javascript, html],
+      stack: [ graphql, html, reactImage, css],
     },
   ];
 
@@ -83,11 +83,20 @@ const Portfolio = () => {
                 </p>
                 <h3 className="text-center my-3">Stack used</h3>
                 <div className="p-10 rounded-xl hover:scale-105 ease-in duration-300">
-                  {/* <Image src={stack} width="64px" height="64px" alt={title} /> */}
+                 <ul className="flex justify-center gap-8">
                   {stack.map((item, index) => (
-          <Image key={index} src={item} width="64px" height="64px" alt={title} />
-        ))}
-              
+                    <li>
+                    <Image
+                      key={index}
+                      src={item}
+                      width="64px"
+                      height="64px"
+                      alt={title}
+                      className="m-5"
+                    />
+                    </li>
+                  ))}
+                  </ul>
                 </div>
               </div>
             </Link>
