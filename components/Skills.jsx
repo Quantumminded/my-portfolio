@@ -8,6 +8,11 @@ import nextjs from "../public/assets/experience/nextjs.png";
 import tailwind from "../public/assets/experience/tailwind.png";
 import graphql from "../public/assets/experience/graphql.png";
 import node from "../public/assets/experience/node.png";
+import bootstrap from "../public/assets/experience/bootstrap.png";
+import express from "../public/assets/experience/express.png";
+import mongo from "../public/assets/experience/mongo.png";
+import postgre from "../public/assets/experience/postgre.png";
+import svelte from "../public/assets/experience/svelte.png";
 import Image from "next/image";
 
 const Skills = () => {
@@ -52,6 +57,27 @@ const Skills = () => {
       title: "Node JS",
       src: node,
     },
+    {
+      id: 9,
+      title: "Bootstrap",
+      src: bootstrap,
+    },
+    {
+      id: 10,
+      title: "Svelte",
+      src: svelte,
+    },
+    {
+      id: 11,
+      title: "Mongo",
+      src: mongo,
+    },
+    {
+      id: 12,
+      title: "Postgre",
+      src: postgre,
+    },
+    
   ];
 
   return (

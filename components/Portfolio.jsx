@@ -15,6 +15,13 @@ import nextjs from "../public/assets/experience/nextjs.png";
 import tailwind from "../public/assets/experience/tailwind.png";
 import graphql from "../public/assets/experience/graphql.png";
 import node from "../public/assets/experience/node.png";
+import bootstrap from "../public/assets/experience/bootstrap.png";
+import express from "../public/assets/experience/express.png";
+import mongo from "../public/assets/experience/mongo.png";
+import postgre from "../public/assets/experience/postgre.png";
+import svelte from "../public/assets/experience/svelte.png";
+import strapi from "../public/assets/experience/strapi.png";
+import { FaGithub } from "react-icons/fa";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -26,7 +33,8 @@ const Portfolio = () => {
       title: "GlobalSpeak",
       imageSrc: global,
       url: "https://globalspeak.netlify.app/",
-      stack: [css, nextjs, html],
+      stack: [css, nextjs, html, bootstrap],
+      git: "https://github.com/Quantumminded/front-end",
     },
     {
       id: 2,
@@ -34,20 +42,23 @@ const Portfolio = () => {
       imageSrc: pokedex,
       url: "https://sparkling-manatee-860534.netlify.app/",
       stack: [reactImage, javascript, node],
+      git: "https://github.com/AdaN6/PokeFight_frontend",
     },
     {
       id: 3,
       title: "Todo's List",
       imageSrc: todos,
       url: "https://to-dos-listss.netlify.app/",
-      stack: [ javascript, html, css, tailwind]
+      stack: [ javascript, html, css, tailwind],
+      git: "https://github.com/Quantumminded/To-do-list",
     },
     {
       id: 4,
       title: "Val piccola",
       imageSrc: valpiccola,
       url: "https://www.valpiccola.com/it",
-      stack: [ graphql, html, reactImage, css],
+      stack: [ svelte, html, tailwind, css, strapi],
+      git: "https://github.com/Valpiccola",
     },
   ];
 
@@ -63,26 +74,31 @@ const Portfolio = () => {
           me and.
         </p>
 
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-20">
-          {portfolios.map(({ id, title, imageSrc, url, stack }) => (
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-20 ">
+          {portfolios.map(({ id, title, imageSrc, url, stack, git }) => (
             <Link key={id} href={`${url}`}>
-              <div className="cursor-pointer group shadow-md shadow-gray-600 overflow-hidden rounded-md dark:bg-white">
+              <div className="cursor-pointer group shadow-md shadow-gray-600 overflow-hidden rounded-md dark:bg-white p-3">
+                
                 <Image
                   src={imageSrc}
                   alt={title}
                   className="rounded-md duration-200
-                  hover:scale-110"
+                  hover:scale-110 shadow-lg"
+                  height="1000px"
                 />
-                <h2 className="text-center text-base capitalize my-4 font-light duration-200 group-hover:underline underline-offset-4">
+                
+                <h2 className="text-center capitalize my-6 font-bold text-2xl duration-200 group-hover:underline underline-offset-4">
                   {title}
                 </h2>
-                <h3 className="text-center my-4">Description</h3>
-                <p className="text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-                  quis ut quo dignissimos consequatur nam dolore deleniti,{" "}
-                </p>
-                <h3 className="text-center my-3">Stack used</h3>
-                <div className="p-10 rounded-xl hover:scale-105 ease-in duration-300">
+                <div>
+                  <p className="text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                    quis ut quo dignissimos consequatur nam dolore deleniti, Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                    quis ut quo dignissimos consequatur nam dolore deleniti,Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                  </p>
+                </div>
+                <h3 className="text-center my-4 font-bold text-lg">Stack used:</h3>
+                <div className="py-5 rounded-xl hover:scale-105 ease-in duration-300">
                  <ul className="flex justify-center gap-8">
                   {stack.map((item, index) => (
                     <li>
@@ -97,6 +113,16 @@ const Portfolio = () => {
                     </li>
                   ))}
                   </ul>
+                </div>
+                <div>
+                  <h3 className="text-center my-4 font-bold text-lg">
+                    Source code
+                  </h3>
+                  <div className="flex justify-center py-3">
+                    <Link href={git}>
+                      <FaGithub size={52} />
+                    </Link>
+                  </div>
                 </div>
               </div>
             </Link>
