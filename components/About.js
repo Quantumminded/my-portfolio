@@ -3,6 +3,7 @@ import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import deved from "../public/dev-ed-wave.png";
 import Image from "next/image";
 
+
 const About = () => {
   return (
     <>

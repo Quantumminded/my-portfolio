@@ -11,7 +11,8 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import Me from "../components/Me";
-import logo from "../public/logo.mp4"
+import video from "../components/logo.mp4"
+
 
 
 export default function Home() {
@@ -67,16 +68,17 @@ export default function Home() {
         >
           <div className="flex justify-between items-center w-full h-full max-w-screen-xl mx-auto p-4">
             {/* <Link href="/#home"> */}
-              {/* <h1 className="text-3xl lg:text-4xl font-bold uppercase underline underline-offset-2 tracking-wider cursor-pointer">
+              <h1 className="text-3xl lg:text-4xl font-bold uppercase underline underline-offset-2 tracking-wider cursor-pointer">
                 Luca Stringhetti
-              </h1> */}
+              </h1>
+              
               <video
                 className="w-32 h-32"
-                src={ logo }
+                src={video}
                 autoPlay
                 loop
                 muted
-              />
+              /> 
             {/* </Link> */}
 
             
