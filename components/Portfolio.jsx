@@ -21,6 +21,7 @@ import mongo from "../public/assets/experience/mongo.png";
 import postgre from "../public/assets/experience/postgre.png";
 import svelte from "../public/assets/experience/svelte.png";
 import strapi from "../public/assets/experience/strapi.png";
+import stripe from "../public/assets/experience/stripe.png";
 import { FaGithub } from "react-icons/fa";
 
 import Link from "next/link";
@@ -33,7 +34,7 @@ const Portfolio = () => {
       title: "GlobalSpeak",
       imageSrc: global,
       url: "https://globalspeak.netlify.app/",
-      stack: [css, nextjs, html, bootstrap],
+      stack: [css, nextjs, html, bootstrap, stripe],
       git: "https://github.com/Quantumminded/front-end",
     },
     {
@@ -57,7 +58,7 @@ const Portfolio = () => {
       title: "Val piccola",
       imageSrc: valpiccola,
       url: "https://www.valpiccola.com/it",
-      stack: [ svelte, html, tailwind, css, strapi],
+      stack: [html, css, svelte, tailwind, strapi],
       git: "https://github.com/Valpiccola",
     },
   ];
