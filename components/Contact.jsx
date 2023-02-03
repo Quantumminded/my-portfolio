@@ -16,7 +16,7 @@ const Contact = () => {
           contact
         </h2>
 
-        <div className="flex flex-col md:flex-row gap-8 shadow-xl shadow-blue-300 dark:shadow-teal-500 bg-white mt-4 justify-center rounded-3xl">
+        <div className="flex flex-col md:flex-row gap-8 shadow-xl shadow-blue-300 dark:shadow-teal-300 bg-white mt-4 justify-center rounded-3xl">
           <div className="w-full md:w-1/2 h-full rounded-xl p-4">
             <Image
               src={contactus}

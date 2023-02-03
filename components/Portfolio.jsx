@@ -92,22 +92,10 @@ const Portfolio = () => {
                   />
                   </div>
 
-                  <div className="relative px-4 -mt-16  ">
-                    <div className="bg-white p-6 rounded-lg shadow-lg mt-4">
-                      <div className="flex items-baseline">
-                        <span className="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
-                          New
-                        </span>
-                        <div className="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
-                          2 baths &bull; 3 rooms
-                        </div>
-                      </div>
-
-                      <div className="p-4">
-                        <span className="inline-block px-2 py-1 leading-none bg-orange-200 text-orange-800 rounded-full font-semibold uppercase tracking-wide text-xs">
-                          Highlight
-                        </span>
-                        <h2 className="mt-2 mb-2  font-bold">{title}</h2>
+                  <div className="relative px-4 -mt-16">
+                    <div className="bg-white p-6 rounded-lg shadow-xl mt-4 shadow-blue-300 dark:shadow-teal-300">
+                      <div className="p-4"> 
+                        <h2 className="mt-2 mb-2  font-bold text-center">{title}</h2>
                         <p className="text-sm">
                           Cras justo odio, dapibus ac facilisis in, egestas eget
                           quam. Donec ullamcorper nulla non metus auctor
@@ -133,14 +121,14 @@ const Portfolio = () => {
                           ))}
                         </ul>
                       </div>
-                      <div className="p-4 flex items-center justify-center text-sm text-gray-600 gap-8">
-                        <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-500 hover:scale-105 duration-200 p-3 cursor-pointer">
+                      <div className=" flex items-center justify-center align-middle text-sm text-gray-600 gap-8 p-3">
+                        <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-300 hover:scale-105 duration-200 p-3 cursor-pointer">
                           <Link href={git}>
                           <FaGithub size={25} />
                           </Link>
                         </div>
                         
-                        <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-500 hover:scale-105 duration-200 p-3 cursor-pointer">
+                        <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-300 hover:scale-105 duration-200 p-3 cursor-pointer">
                           <a href={url} target="_blank">
                           <FiExternalLink size={25} />
                           </a>
@@ -148,6 +136,7 @@ const Portfolio = () => {
 
                       </div>
                     </div>
+                    
                   </div>
                 </div>
               </div>
