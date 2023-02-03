@@ -79,14 +79,15 @@ const Portfolio = () => {
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-20 my-6">
           {portfolios.map(({ id, title, imageSrc, url, stack, git }) => (
             <Link key={id} href={`${url}`}>
-              <>
-                <div className="wrapper bg-white antialiased text-gray-900">
+            
+                <div className="wrapper bg-white dark:bg-gray-900 antialiased text-gray-900">
                   <div>
                     <Image
                       src={imageSrc}
                       alt={title}
                       height="1300px"
-                      className="w-full object-fill object-center rounded-lg shadow-md"
+                      className="w-full object-fill object-center rounded-lg shadow-md duration-700 
+                      hover:scale-110"
                     />
 
                     <div className="relative px-4 -mt-16  ">
@@ -116,17 +117,18 @@ const Portfolio = () => {
                           </p>
                           
                         </div>
-                        <div className="p-4 border-t border-b text-xs text-gray-700">
-                        <ul className="flex justify-center gap-8">
+                        <div className="py-4 border-t border-b text-xs text-gray-700">
+                        <ul className="flex justify-center gap-8 ">
                     {stack.map((item, index) => (
-                      <li>
+                      <li className=" ">
                         <Image
                           key={index}
                           src={item}
                           width="44px"
                           height="44px"
                           alt={title}
-                          className="m-5"
+                          className="duration-700 
+                          hover:scale-110"
                         />
                       </li>
                     ))}
@@ -174,7 +176,6 @@ const Portfolio = () => {
                     </div>
                   </div>
                 </div>
-              </>
             </Link>
           ))}
         </div>

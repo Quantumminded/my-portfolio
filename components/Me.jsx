@@ -1,17 +1,26 @@
 import Link from "next/link";
 import React from "react";
+import me from "../public/me.png"
+import Image from "next/image";
 
 import { MdExpandMore } from "react-icons/md";
 
 const Me = () => {
   return (
-    <div id="me" className="w-full">
-      <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
+    <div id="me" className="w-full md:flex">
+      <Image
+        src={me}
+        // width="844px"
+        // height="444px"
+        alt=""
+        className=""
+      />
+      <div className="max-w-screen-xl mx-auto px-4 py-16 text-center md:text-left">
         <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-600 dark:text-teal-400 font-bold text-center">
           me
         </h2>
 
-        <div className="shadow-xl shadow-blue-300 dark:shadow-teal-500 my-8 px-8 dark:bg-white rounded-3xl py-4">
+        <div className=" shadow-xl shadow-blue-300 dark:shadow-teal-500 my-8 px-8 dark:bg-white rounded-3xl py-4">
           <p className="py-4 max-w-2xl mx-auto">
             Nepenthe above my pallas of rapping guessing shore. Then chamber
             midnight nevermore nevermore. Dared pallas nothing door me oer
@@ -33,6 +42,8 @@ const Me = () => {
             evilprophet is than burden little the and me at, there above heaven
             in more no, nevermore sinking fowl the door oer.
           </p>
+
+          
         </div>
 
         <div className="flex items-center justify-center gap-10">
@@ -44,7 +55,6 @@ const Me = () => {
               </span>
             </div>
           </a>
-
         </div>
       </div>
     </div>
