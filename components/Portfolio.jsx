@@ -23,6 +23,7 @@ import svelte from "../public/assets/experience/svelte.png";
 import strapi from "../public/assets/experience/strapi.png";
 import stripe from "../public/assets/experience/stripe.png";
 import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi"
 
 import Link from "next/link";
 import Image from "next/image";
@@ -78,7 +79,7 @@ const Portfolio = () => {
         {/*Cards */}
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-20 my-6">
           {portfolios.map(({ id, title, imageSrc, url, stack, git }) => (
-            <Link key={id} href={`${url}`}>
+            <div key={id} className="cursor-pointer">
               <div className="wrapper bg-white dark:bg-gray-900 antialiased text-gray-900">
                 <div>
                   <Image
@@ -130,19 +131,25 @@ const Portfolio = () => {
                           ))}
                         </ul>
                       </div>
-                      <div className="p-4 flex items-center justify-center text-sm text-gray-600">
+                      <div className="p-4 flex items-center justify-center text-sm text-gray-600 gap-8">
                         <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-500 hover:scale-105 duration-200 p-3 cursor-pointer">
                           <Link href={git}>
                           <FaGithub size={25} />
                           </Link>
-                          
                         </div>
+                        
+                        <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-500 hover:scale-105 duration-200 p-3 cursor-pointer">
+                          <a href={url} target="_blank">
+                          <FiExternalLink size={25} />
+                          </a>
+                        </div>
+
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
         {/* Button to all project */}

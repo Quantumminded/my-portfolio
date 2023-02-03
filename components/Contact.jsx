@@ -24,7 +24,7 @@ const Contact = () => {
             />
             <p className="pt-2 pb-8">
               I am open to talk regarding freelancing or full-time
-              opportunities. Fell free to contact me via e-mail at lukkino31@gmail.com or using your preferred
+              opportunities. Fell free to contact me via e-mail at <span className="font-bold">lukkino31@gmail.com</span> or using your preferred
               medium.
             </p>
 
