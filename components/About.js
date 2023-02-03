@@ -1,5 +1,4 @@
 import React from "react";
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import deved from "../public/dev-ed-wave.png";
 import Image from "next/image";
 
@@ -10,7 +9,7 @@ import Typewriter from "typewriter-effect";
 const About = () => {
   return (
     <>
-      <div className="text-center py-20 px-20">
+      <div className="text-center py-24 px-24">
         <h2 className=" text-blue-600 dark:text-teal-400 text-4xl md:text-6xl tracking-wider uppercase font-bold text-center">
           Hello I'm 
           <Typical steps={["Luca Stringhetti", 1000]} loop={1} />
@@ -39,7 +38,7 @@ const About = () => {
         </p>
       </div>
 
-      <div className="relative mx-auto bg-gradient-to-b dark:from-teal-500 from-blue-600 rounded-full w-80 h-80 overflow-hidden md:my-24 md:h-96 md:w-96">
+      <div className="relative mx-auto bg-gradient-to-b dark:from-teal-500 from-blue-600 rounded-full w-80 h-80 overflow-hidden md:my-24  md:h-96 md:w-96">
         <Image src={deved} layout="fill" objectFit="cover" />
       </div>
     </>
