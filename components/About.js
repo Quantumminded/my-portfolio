@@ -9,7 +9,7 @@ import Typewriter from "typewriter-effect";
 const About = () => {
   return (
     <>
-      <div className="text-center py-24 px-24">
+      <div className="text-center py-24 px-auto ">
         <h2 className=" text-blue-600 dark:text-teal-400 text-4xl md:text-6xl tracking-wider uppercase font-bold text-center">
           Hello I'm 
           <Typical steps={["Luca Stringhetti", 1000]} loop={1} />
