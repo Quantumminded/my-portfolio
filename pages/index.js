@@ -181,7 +181,7 @@ export default function Home() {
         </section>
 
         {/* ME SECTION */}
-        <section id="about" className="py-28 px-4">
+        <section id="about" className="pt-28 px-4">
           <Me />
         </section>
 
