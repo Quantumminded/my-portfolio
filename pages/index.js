@@ -69,7 +69,7 @@ export default function Home() {
         >
           <div className="flex justify-between items-center w-full h-full max-w-screen-xl mx-auto p-4">
             
-            <Image src={luca} width="240px" height="64px" objectFit="cover" />
+            <Image src={luca} height="80px" width="100px" objectFit="" />
             
 
             <div>
