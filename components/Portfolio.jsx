@@ -80,15 +80,17 @@ const Portfolio = () => {
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-20 my-6">
           {portfolios.map(({ id, title, imageSrc, url, stack, git }) => (
             <div key={id} className="cursor-pointer">
-              <div className="wrapper bg-white dark:bg-gray-900 antialiased text-gray-900">
+              <div className="wrapper bg-white dark:bg-gray-900 antialiased text-gray-900 ">
                 <div>
+                  <div className="rounded-xl">
                   <Image
                     src={imageSrc}
                     alt={title}
                     height="1300px"
                     className="w-full object-fill object-center rounded-lg shadow-md duration-700 
-                      hover:scale-110"
+                      hover:scale-110 "
                   />
+                  </div>
 
                   <div className="relative px-4 -mt-16  ">
                     <div className="bg-white p-6 rounded-lg shadow-lg mt-4">
