@@ -45,7 +45,7 @@ export default function Home() {
     },
     {
       id: 4,
-      link: "me",
+      link: "about",
     },
     {
       id: 5,
@@ -181,7 +181,7 @@ export default function Home() {
         </section>
 
         {/* ME SECTION */}
-        <section id="me" className="py-28 px-4">
+        <section id="about" className="py-28 px-4">
           <Me />
         </section>
 

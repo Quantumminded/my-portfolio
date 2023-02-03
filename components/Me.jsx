@@ -17,7 +17,7 @@ const Me = () => {
       />
       <div className="max-w-screen-xl mx-auto px-4 py-16 text-center md:text-left">
         <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-600 dark:text-teal-400 font-bold text-center">
-          me
+          about
         </h2>
 
         <div className=" shadow-xl shadow-blue-300 dark:shadow-teal-300 my-8 px-8 dark:bg-white rounded-3xl py-4">

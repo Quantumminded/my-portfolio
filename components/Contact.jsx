@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-
+import contact from "../public/contact.png"
 import contactus from "../public/assets/contact-us.jpg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import {AiFillMail } from "react-icons/ai";
@@ -17,17 +17,25 @@ const Contact = () => {
         </h2>
 
         <div className="flex flex-col md:flex-row gap-8 shadow-xl shadow-blue-300 dark:shadow-teal-300 bg-white mt-4 justify-center rounded-3xl">
-          <div className="w-full md:w-1/2 h-full rounded-xl p-4">
+        
+          <div className="w-full md:w-1/2 h-full rounded-xl p-5">
+            
+          <div className="mb-3">
+            <div className=" ml-44 ">
             <Image
-              src={contactus}
+              src={contact}
               alt="man with laptop"
               className="rounded-xl"
             />
-            <p className="pt-2 pb-8">
+            </div>
+            
+            <p className="p-4">
               I am open to talk regarding freelancing or full-time
               opportunities. Fell free to contact me via e-mail at <span className="font-bold">lukkino31@gmail.com</span> or using your preferred
               medium.
             </p>
+          </div>
+            
 
             <div className="grid grid-cols-3 mx-auto w-4/5 gap-10 mb-4">
               <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-500 hover:scale-105 duration-200 p-3 cursor-pointer">
