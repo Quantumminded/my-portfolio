@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
+
 import contactus from "../public/assets/contact-us.jpg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import {AiFillMail } from "react-icons/ai";
@@ -30,13 +31,19 @@ const Contact = () => {
 
             <div className="grid grid-cols-3 mx-auto w-4/5 gap-10 mb-4">
               <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-500 hover:scale-105 duration-200 p-3 cursor-pointer">
+                <a href="https://www.linkedin.com/in/lucastringhetti/" target="_blank">
                 <FaLinkedin size={25} />
+                </a>
               </div>
               <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-500 hover:scale-105 duration-200 p-3 cursor-pointer">
+              <a href="https://github.com/Quantumminded" target="_blank">
                 <FaGithub size={25} />
+                </a>
               </div>
               <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-500 hover:scale-105 duration-200 p-3 cursor-pointer">
+              <a href="" target="_blank">
                 <AiFillMail size={25} />
+                </a>
               </div>
             </div>
           </div>
