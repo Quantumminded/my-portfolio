@@ -6,11 +6,12 @@ import Head from "next/head";
 import Portfolio from "../components/Portfolio";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
-import About from "../components/About";
-import { BsFillMoonStarsFill } from "react-icons/bs";
-
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
+import Landing from "../components/Landing";
 import Me from "../components/Me";
+
+import { BsFillMoonStarsFill } from "react-icons/bs";
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
+
 import luca from "../public/luca.png";
 import Image from "next/image";
 
@@ -40,7 +41,7 @@ export default function Home() {
     },
     {
       id: 3,
-      link: "experience",
+      link: "skills",
     },
     {
       id: 4,
@@ -170,27 +171,27 @@ export default function Home() {
 
       <main className="bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         {/* ABOUT SECTION */}
-        <section className="sm:flex-row md-flex-row lg:flex py-28 px-10">
-          <About />
+        <section id="home" className="sm:flex-row md-flex-row lg:flex py-28 px-10">
+          <Landing />
         </section>
 
         {/* SKILL SECTION */}
-        <section className="">
+        <section id="skills" className="">
           <Skills />
         </section>
 
         {/* ME SECTION */}
-        <section className="py-28 px-4">
+        <section id="me" className="py-28 px-4">
           <Me />
         </section>
 
         {/* PORFOLIO SECTION */}
-        <section className="">
+        <section id="portfolio" className="">
           <Portfolio />
         </section>
 
         {/* CONTACT FORM */}
-        <section>
+        <section id="contact">
           <Contact />
         </section>
       </main>

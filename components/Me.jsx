@@ -7,7 +7,7 @@ import { MdExpandMore } from "react-icons/md";
 
 const Me = () => {
   return (
-    <div id="me" className="w-full md:flex">
+    <div className="w-full md:flex">
       <Image
         src={me}
         // width="844px"
