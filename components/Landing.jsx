@@ -7,12 +7,27 @@ import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 
 const Landing = () => {
+
+
   return (
     <>
       <div className="text-center py-24 px-auto mx-auto">
-        <h2 className=" text-blue-600 dark:text-teal-400 text-4xl md:text-6xl tracking-wider uppercase font-bold text-center">
-          Hello I'm
-          <Typical steps={["Luca Stringhetti", 1000]} loop={1} />
+        <h2 className=" text-blue-600 dark:text-teal-400 text-4xl md:text-6xl tracking-wider uppercase font-bold text-center ">
+        
+          <motion.div
+            initial={{ opacity: 0, x: "+100vh" }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ type: "spring", duration: 2.5, }}
+          >
+            <p className="m-5">Hello, I'm</p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: "-100vh" }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ type: "spring", bounce: 0.6 , duration: 2.5, }}
+          >
+            <p className="m-5">Luca Stringhetti</p>
+          </motion.div>
         </h2>
         <h3 className="text-4xl dark:text-white font-bold">
           <Typewriter
@@ -20,7 +35,7 @@ const Landing = () => {
               strings: [
                 "Front End Developer",
                 "Full Stack Developer",
-                "Mobile Developer",
+                "Beck End Developer",
               ],
               autoStart: true,
               loop: true,
@@ -41,28 +56,29 @@ const Landing = () => {
       {/* <div className="relative mx-auto bg-gradient-to-b dark:from-teal-500 from-blue-600 rounded-full w-80 h-80 overflow-hidden md:my-24  md:h-96 md:w-96">
         <Image src={deved} layout="fill" objectFit="cover" />
       </div> */}
-      
-        <motion.div
-          className="md:mx-28 "
-          border-radius="50%"
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ default: {
+
+      <motion.div
+        className="md:mx-28 "
+        border-radius="50%"
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          default: {
             duration: 4.5,
-            ease: [0, 0.71, 0.2, 1.01]
+            ease: [0, 0.71, 0.2, 1.01],
           },
           scale: {
             type: "spring",
             damping: 5,
             stiffness: 100,
-            restDelta: 0.001
-          } }}
-        >
-          < div className="relative mx-auto bg-gradient-to-b dark:from-teal-500 from-blue-600 rounded-full w-80 h-80 overflow-hidden md:my-24 md:h-96 md:w-96 sm:mx-10  ">
+            restDelta: 0.001,
+          },
+        }}
+      >
+        <div className="relative mx-auto bg-gradient-to-b dark:from-teal-500 from-blue-600 rounded-full w-80 h-80 overflow-hidden md:my-24 md:h-96 md:w-96 sm:mx-10  ">
           <Image src={deved} layout="fill" objectFit="cover" />
-          </div>
-        </motion.div>
-      
+        </div>
+      </motion.div>
     </>
   );
 };
