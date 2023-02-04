@@ -1,6 +1,7 @@
 import React from "react";
 
 import { MdExpandMore } from "react-icons/md";
+import { motion } from "framer-motion";
 
 import global from "../public/assets/portfolio/global.png";
 import pokedex from "../public/assets/portfolio/pokedex.png";
@@ -23,7 +24,7 @@ import svelte from "../public/assets/experience/svelte.png";
 import strapi from "../public/assets/experience/strapi.png";
 import stripe from "../public/assets/experience/stripe.png";
 import { FaGithub } from "react-icons/fa";
-import { FiExternalLink } from "react-icons/fi"
+import { FiExternalLink } from "react-icons/fi";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -80,66 +81,70 @@ const Portfolio = () => {
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-20 my-6">
           {portfolios.map(({ id, title, imageSrc, url, stack, git }) => (
             <div key={id} className="cursor-pointer">
-              <div className="wrapper bg-white dark:bg-gray-900 antialiased text-gray-900 ">
-                <div>
-                  <div className="rounded-xl">
-                  <Image
-                    src={imageSrc}
-                    alt={title}
-                    height="1300px"
-                    className="w-full object-fill object-center rounded-lg shadow-md duration-700 
-                      hover:scale-110 "
-                  />
-                  </div>
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <div className="wrapper bg-white dark:bg-gray-900 antialiased text-gray-900 ">
+                  <div>
+                    <div className="rounded-xl">
+                      <Image
+                        src={imageSrc}
+                        alt={title}
+                        height="1300px"
+                        className="w-full object-fill object-center rounded-lg shadow-md"
+                      />
+                    </div>
 
-                  <div className="relative px-4 -mt-16">
-                    <div className="bg-white p-6 rounded-lg shadow-xl mt-4 shadow-blue-300 dark:shadow-teal-300">
-                      <div className="p-4"> 
-                        <h2 className="mt-2 mb-2  font-bold text-center">{title}</h2>
-                        <p className="text-sm">
-                          Cras justo odio, dapibus ac facilisis in, egestas eget
-                          quam. Donec ullamcorper nulla non metus auctor
-                          fringilla. Cras justo odio, dapibus ac facilisis in,
-                          egestas eget quam. Donec ullamcorper nulla non metus
-                          auctor fringilla.
-                        </p>
-                      </div>
-                      <div className="py-4 border-t border-b text-xs text-gray-700">
-                        <ul className="flex justify-center gap-8 ">
-                          {stack.map((item, index) => (
-                            <li className=" ">
-                              <Image
-                                key={index}
-                                src={item}
-                                width="44px"
-                                height="44px"
-                                alt={title}
-                                className="duration-700 
+                    <div className="relative px-4 -mt-16">
+                      <div className="bg-white p-6 rounded-lg shadow-xl mt-4 shadow-blue-300 dark:shadow-teal-300">
+                        <div className="p-4">
+                          <h2 className="mt-2 mb-2  font-bold text-center">
+                            {title}
+                          </h2>
+                          <p className="text-sm">
+                            Cras justo odio, dapibus ac facilisis in, egestas
+                            eget quam. Donec ullamcorper nulla non metus auctor
+                            fringilla. Cras justo odio, dapibus ac facilisis in,
+                            egestas eget quam. Donec ullamcorper nulla non metus
+                            auctor fringilla.
+                          </p>
+                        </div>
+                        <div className="py-4 border-t border-b text-xs text-gray-700">
+                          <ul className="flex justify-center gap-8 ">
+                            {stack.map((item, index) => (
+                              <li className=" ">
+                                <Image
+                                  key={index}
+                                  src={item}
+                                  width="44px"
+                                  height="44px"
+                                  alt={title}
+                                  className="duration-700 
                           hover:scale-110"
-                              />
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                      <div className=" flex items-center justify-center align-middle text-sm text-gray-600 gap-8 p-3">
-                        <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-300 hover:scale-105 duration-200 p-3 cursor-pointer">
-                          <Link href={git}>
-                          <FaGithub size={25} />
-                          </Link>
+                                />
+                              </li>
+                            ))}
+                          </ul>
                         </div>
-                        
-                        <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-300 hover:scale-105 duration-200 p-3 cursor-pointer">
-                          <a href={url} target="_blank">
-                          <FiExternalLink size={25} />
-                          </a>
-                        </div>
+                        <div className=" flex items-center justify-center align-middle text-sm text-gray-600 gap-8 p-3">
+                          <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-300 hover:scale-105 duration-200 p-3 cursor-pointer">
+                            <Link href={git}>
+                              <FaGithub size={25} />
+                            </Link>
+                          </div>
 
+                          <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-300 hover:scale-105 duration-200 p-3 cursor-pointer">
+                            <a href={url} target="_blank">
+                              <FiExternalLink size={25} />
+                            </a>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    
                   </div>
                 </div>
-              </div>
+              </motion.button>
             </div>
           ))}
         </div>
