@@ -7,16 +7,18 @@ import { MdExpandMore } from "react-icons/md";
 
 const Me = () => {
   return (
-    <div className="w-full md:flex">
+    <div className="w-full md:flex-row lg:flex">
+      <div className=" ">
       <Image
         src={me}
-        // width="844px"
-        // height="444px"
+        
+        
+        
         alt=""
         className=""
       />
-      
-      <div className="max-w-screen-xl mx-auto px-4 py-8 text-center md:text-left">
+      </div>
+      <div className="max-w-screen-xl mx-auto px-16 py-16 text-center md:text-left">
         
       <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-600 dark:text-teal-400 font-bold text-center">
           about

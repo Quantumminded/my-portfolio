@@ -47,9 +47,18 @@ const Landing = () => {
           border-radius="50%"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 4.5 }}
+          transition={{ default: {
+            duration: 4.5,
+            ease: [0, 0.71, 0.2, 1.01]
+          },
+          scale: {
+            type: "spring",
+            damping: 5,
+            stiffness: 100,
+            restDelta: 0.001
+          } }}
         >
-          < div className="relative mx-auto bg-gradient-to-b dark:from-teal-500 from-blue-600 rounded-full w-80 h-80 overflow-hidden md:my-24 md:h-96 md:w-96 sm:mx-10 ">
+          < div className="relative mx-auto bg-gradient-to-b dark:from-teal-500 from-blue-600 rounded-full w-80 h-80 overflow-hidden md:my-24 md:h-96 md:w-96 sm:mx-10  ">
           <Image src={deved} layout="fill" objectFit="cover" />
           </div>
         </motion.div>
