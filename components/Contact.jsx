@@ -22,12 +22,12 @@ const Contact = () => {
         
           <div className="w-full md:w-1/2 h-full rounded-xl p-5">
             
-          <div className="mb-3">
-            <div className=" ml-44 ">
+          <div className="mb-3 ">
+            <div className=" ml-28">
             <Image
               src={contact}
               alt="man with laptop"
-              className="rounded-xl"
+              className="rounded-xl "
             />
             </div>
             
