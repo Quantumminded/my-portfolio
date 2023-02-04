@@ -114,15 +114,19 @@ const Portfolio = () => {
                           <ul className="flex justify-center gap-8 ">
                             {stack.map((item, index) => (
                               <li className=" ">
-                                <Image
-                                  key={index}
-                                  src={item}
-                                  width="44px"
-                                  height="44px"
-                                  alt={title}
-                                  className="duration-700 
-                          hover:scale-110"
-                                />
+                                <motion.button
+                                  whileHover={{ scale: 1.1 }}
+                                  whileTap={{ scale: 0.9 }}
+                                >
+                                  <Image
+                                    key={index}
+                                    src={item}
+                                    width="44px"
+                                    height="44px"
+                                    alt={title}
+                                    className=""
+                                  />
+                                </motion.button>
                               </li>
                             ))}
                           </ul>
