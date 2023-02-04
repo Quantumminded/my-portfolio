@@ -9,9 +9,9 @@ import Typewriter from "typewriter-effect";
 const Landing = () => {
   return (
     <>
-      <div  className="text-center py-24 px-auto ">
+      <div className="text-center py-24 px-auto mx-auto">
         <h2 className=" text-blue-600 dark:text-teal-400 text-4xl md:text-6xl tracking-wider uppercase font-bold text-center">
-          Hello I'm 
+          Hello I'm
           <Typical steps={["Luca Stringhetti", 1000]} loop={1} />
         </h2>
         <h3 className="text-4xl dark:text-white font-bold">
@@ -38,9 +38,22 @@ const Landing = () => {
         </p>
       </div>
 
-      <div className="relative mx-auto bg-gradient-to-b dark:from-teal-500 from-blue-600 rounded-full w-80 h-80 overflow-hidden md:my-24  md:h-96 md:w-96">
+      {/* <div className="relative mx-auto bg-gradient-to-b dark:from-teal-500 from-blue-600 rounded-full w-80 h-80 overflow-hidden md:my-24  md:h-96 md:w-96">
         <Image src={deved} layout="fill" objectFit="cover" />
-      </div>
+      </div> */}
+      
+        <motion.div
+          className="md:mx-28 "
+          border-radius="50%"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 4.5 }}
+        >
+          < div className="relative mx-auto bg-gradient-to-b dark:from-teal-500 from-blue-600 rounded-full w-80 h-80 overflow-hidden md:my-24 md:h-96 md:w-96 sm:mx-10 ">
+          <Image src={deved} layout="fill" objectFit="cover" />
+          </div>
+        </motion.div>
+      
     </>
   );
 };
