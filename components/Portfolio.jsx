@@ -110,30 +110,30 @@ const Portfolio = () => {
                             auctor fringilla.
                           </p>
                         </div>
-                        <div className="py-4 border-t border-b text-xs text-gray-700">
+                        <div className="py-4 border-t border-b text-xs text-gray-700 border-blue-400 dark:border-teal-400">
                           <ul className="flex justify-center gap-8 ">
                             {stack.map((item, index) => (
-                              <li className=" ">
-                                <motion.button
+                              <li className=" " key={index}>
+                                {/* <motion.button
                                   whileHover={{ scale: 1.1 }}
                                   whileTap={{ scale: 0.9 }}
-                                >
+                                > */}
                                   <Image
-                                    key={index}
+                                    
                                     src={item}
                                     width="44px"
                                     height="44px"
                                     alt={title}
                                     className=""
                                   />
-                                </motion.button>
+                                {/* </motion.button> */}
                               </li>
                             ))}
                           </ul>
                         </div>
                         <div className=" flex items-center justify-center align-middle text-sm text-gray-600 gap-8 p-3">
                           <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-300 hover:scale-105 duration-200 p-3 cursor-pointer">
-                            <Link href={git}>
+                            <Link href={git} target="_blank">
                               <FaGithub size={25} />
                             </Link>
                           </div>

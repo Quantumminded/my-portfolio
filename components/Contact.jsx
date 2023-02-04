@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 import contact from "../public/contact.png"
 import contactus from "../public/assets/contact-us.jpg";
@@ -12,7 +13,7 @@ const Contact = () => {
   return (
     <div className="w-full">
       <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
-        
+
         <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-600 dark:text-teal-400 font-bold text-center">
           contact
         </h2>
@@ -40,19 +41,19 @@ const Contact = () => {
 
             <div className="grid grid-cols-3 mx-auto w-4/5 gap-10 mb-4">
               <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-500 hover:scale-105 duration-200 p-3 cursor-pointer">
-                <a href="https://www.linkedin.com/in/lucastringhetti/" target="_blank">
+                <Link href="https://www.linkedin.com/in/lucastringhetti/" target="_blank">
                 <FaLinkedin size={25} />
-                </a>
+                </Link>
               </div>
               <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-500 hover:scale-105 duration-200 p-3 cursor-pointer">
-              <a href="https://github.com/Quantumminded" target="_blank">
+              <Link href="https://github.com/Quantumminded" target="_blank">
                 <FaGithub size={25} />
-                </a>
+                </Link>
               </div>
               <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-500 hover:scale-105 duration-200 p-3 cursor-pointer">
-              <a href="" target="_blank">
+              <Link href="" target="_blank">
                 <AiFillMail size={25} />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

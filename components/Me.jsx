@@ -49,7 +49,7 @@ const Me = () => {
 
         <div className="flex items-center justify-center p-6">
           <a href="/resume.pdf" target="_blank">
-            <div className="group flex items-center justify-center bg-blue-500 dark:bg-teal-400 text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer">
+            <div className="group flex items-center justify-center bg-blue-600 dark:bg-teal-400 text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer">
               resume
               <span className="-rotate-90 duration-100 ease-in group-hover:rotate-0">
                 <MdExpandMore size={25} />
