@@ -111,8 +111,8 @@ const Portfolio = () => {
                   whileTap={{ scale: 0.9 }}
                 >
                   <div className="wrapper bg-transparent antialiased text-gray-900 ">
-                    <div className="m-10">
-                      <div className="rounded-xl object-contain">
+                    <div className="md:px-8">
+                      <div className="rounded-xl object-contain ">
                         <Image
                           src={imageSrc}
                           alt={title}

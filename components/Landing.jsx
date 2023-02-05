@@ -12,7 +12,7 @@ const Landing = () => {
   return (
     <>
       <div className="text-center py-24 px-auto mx-auto">
-        <h2 className=" text-blue-600 dark:text-teal-400 text-4xl md:text-6xl tracking-wider uppercase font-bold text-center ">
+        <h2 className=" text-blue-600 dark:text-teal-400 text-3xl md:text-6xl tracking-wider uppercase font-bold text-center ">
         
           <motion.div
             initial={{ opacity: 0, x: "+100vh" }}
@@ -58,7 +58,7 @@ const Landing = () => {
       </div> */}
 
       <motion.div
-        className="md:mx-28 "
+        className="flex justify-center object-contain"
         border-radius="50%"
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -75,7 +75,7 @@ const Landing = () => {
           },
         }}
       >
-        <div className="relative mx-auto bg-gradient-to-b dark:from-teal-500 from-blue-600 rounded-full w-80 h-80 overflow-hidden md:my-24 md:h-96 md:w-96 sm:mx-10  ">
+        <div className="relative mx-auto bg-gradient-to-b dark:from-teal-500 from-blue-600 rounded-full w-80 h-80 overflow-hidden md:my-24 md:h-96 md:w-96 sm:mx-10">
           <Image src={deved} layout="fill" objectFit="cover" />
         </div>
       </motion.div>
