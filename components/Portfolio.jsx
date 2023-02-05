@@ -29,6 +29,10 @@ import { FiExternalLink } from "react-icons/fi";
 import Link from "next/link";
 import Image from "next/image";
 
+import Flickity from "react-flickity-component";
+
+
+
 const Portfolio = () => {
   const portfolios = [
     {
@@ -79,8 +83,10 @@ const Portfolio = () => {
         </p>
         {/*Cards */}
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-20 my-6">
+        {/* <div className="px-20"> 
+        <Flickity > */}
           {portfolios.map(({ id, title, imageSrc, url, stack, git }) => (
-            <div key={id} className="cursor-pointer">
+            <div key={id} className="cursor-pointer p-10">
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -91,8 +97,8 @@ const Portfolio = () => {
                       <Image
                         src={imageSrc}
                         alt={title}
-                        height="1300px"
-                        className="w-full object-fill object-center rounded-lg shadow-md"
+                        // height="1300"
+                        className="w-full  object-fill object-center rounded-lg shadow-md"
                       />
                     </div>
 
@@ -151,6 +157,9 @@ const Portfolio = () => {
               </motion.button>
             </div>
           ))}
+          {/* </Flickity>
+          </div> */}
+          
         </div>
         {/* Button to all project */}
         <div className="flex items-center justify-center">
@@ -164,6 +173,7 @@ const Portfolio = () => {
           </Link>
         </div>
         {/* End button */}
+        
       </div>
     </div>
   );
