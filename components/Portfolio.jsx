@@ -31,12 +31,13 @@ import Image from "next/image";
 
 // import Swiper JS
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Mousewheel, A11y } from 'swiper';
+import { Navigation, Pagination, Mousewheel, A11y} from 'swiper';
 // import Swiper styles
 import "swiper/css";
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/mousewheel';
+
 
 const Portfolio = () => {
   const portfolios = [
@@ -76,7 +77,7 @@ const Portfolio = () => {
 
   return (
     <div className="w-full">
-      <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left ">
+      <div className="md:px-10 text-center  ">
         {/* Title & desciption */}
         <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-600 dark:text-teal-400 font-bold text-center">
           portfolio
@@ -90,7 +91,7 @@ const Portfolio = () => {
         {/* <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-20 my-6"> */}
         <div className=""> 
         <Swiper 
-         modules={[Navigation, Pagination, Mousewheel, A11y]}
+          modules={[Navigation, Pagination, Mousewheel, A11y]}
           mousewheel
           navigation
           pagination={{ clickable: true }}
@@ -98,22 +99,26 @@ const Portfolio = () => {
           slidesPerView={3}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
+          className=""
+          
         >
+          
           {portfolios.map(({ id, title, imageSrc, url, stack, git }) => (
-            <SwiperSlide>
-              <div key={id} className="cursor-pointer">
+            <SwiperSlide className="" >
+              <div key={id} className="cursor-pointer ">
                 <motion.button
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                 >
-                  <div className="wrapper bg-white dark:bg-gray-900 antialiased text-gray-900 m-2">
-                    <div>
+                  <div className="wrapper bg-transparent antialiased text-gray-900 ">
+                    <div className="m-10">
                       <div className="rounded-xl object-contain">
                         <Image
                           src={imageSrc}
                           alt={title}
-                          height="1300"
-                          className="w-full  object-fill object-center rounded-lg shadow-md"
+                          // height="1300"
+                          // className="w-full  object-fill object-center rounded-lg shadow-md"
+                          className="rounded-lg shadow-md"
                         />
                       </div>
 
@@ -169,9 +174,11 @@ const Portfolio = () => {
                     </div>
                   </div>
                 </motion.button>
+                
               </div>
             </SwiperSlide>
           ))}
+          
         </Swiper>
       
         </div>
