@@ -2,7 +2,7 @@ import React from "react";
 import deved from "../public/dev-ed-wave.png";
 import Image from "next/image";
 
-import Typical from "react-typical";
+
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 
@@ -19,14 +19,14 @@ const Landing = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ type: "spring", duration: 2.5, }}
           >
-            <p className="m-5">Hi, I'm</p>
+            <p className="">Hello, I'm</p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: "-100vh" }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ type: "spring", bounce: 0.6 , duration: 2.5, }}
           >
-            <p className="m-5">Luca Stringhetti</p>
+            <p className="">Luca Stringhetti</p>
           </motion.div>
         </h2>
         <h3 className="text-4xl dark:text-white font-bold">

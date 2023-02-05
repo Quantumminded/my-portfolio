@@ -171,7 +171,7 @@ export default function Home() {
 
       <main className="bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         {/* ABOUT SECTION */}
-        <section id="home" className="sm:flex-row md-flex-row lg:flex py-28 px-10">
+        <section id="home" className="sm:flex-row md-flex-row lg:flex py-28 px-20">
           <Landing />
         </section>
 

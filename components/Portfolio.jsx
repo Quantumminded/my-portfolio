@@ -29,9 +29,14 @@ import { FiExternalLink } from "react-icons/fi";
 import Link from "next/link";
 import Image from "next/image";
 
-import Flickity from "react-flickity-component";
-
-
+// import Swiper JS
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Mousewheel, A11y } from 'swiper';
+// import Swiper styles
+import "swiper/css";
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/mousewheel';
 
 const Portfolio = () => {
   const portfolios = [
@@ -82,85 +87,96 @@ const Portfolio = () => {
           me and.
         </p>
         {/*Cards */}
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-20 my-6">
-        {/* <div className="px-20"> 
-        <Flickity > */}
+        {/* <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-20 my-6"> */}
+        <div className=""> 
+        <Swiper 
+         modules={[Navigation, Pagination, Mousewheel, A11y]}
+          mousewheel
+          navigation
+          pagination={{ clickable: true }}
+          spaceBetween={50}
+          slidesPerView={3}
+          onSlideChange={() => console.log("slide change")}
+          onSwiper={(swiper) => console.log(swiper)}
+        >
           {portfolios.map(({ id, title, imageSrc, url, stack, git }) => (
-            <div key={id} className="cursor-pointer p-10">
-              <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <div className="wrapper bg-white dark:bg-gray-900 antialiased text-gray-900 ">
-                  <div>
-                    <div className="rounded-xl">
-                      <Image
-                        src={imageSrc}
-                        alt={title}
-                        // height="1300"
-                        className="w-full  object-fill object-center rounded-lg shadow-md"
-                      />
-                    </div>
+            <SwiperSlide>
+              <div key={id} className="cursor-pointer">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <div className="wrapper bg-white dark:bg-gray-900 antialiased text-gray-900 m-2">
+                    <div>
+                      <div className="rounded-xl object-contain">
+                        <Image
+                          src={imageSrc}
+                          alt={title}
+                          height="1300"
+                          className="w-full  object-fill object-center rounded-lg shadow-md"
+                        />
+                      </div>
 
-                    <div className="relative px-4 -mt-16">
-                      <div className="bg-white p-6 rounded-lg shadow-xl mt-4 shadow-blue-300 dark:shadow-teal-300">
-                        <div className="p-4">
-                          <h2 className="mt-2 mb-2  font-bold text-center">
-                            {title}
-                          </h2>
-                          <p className="text-sm">
-                            Cras justo odio, dapibus ac facilisis in, egestas
-                            eget quam. Donec ullamcorper nulla non metus auctor
-                            fringilla. Cras justo odio, dapibus ac facilisis in,
-                            egestas eget quam. Donec ullamcorper nulla non metus
-                            auctor fringilla.
-                          </p>
-                        </div>
-                        <div className="py-4 border-t border-b text-xs text-gray-700 border-blue-400 dark:border-teal-400">
-                          <ul className="flex justify-center gap-8 ">
-                            {stack.map((item, index) => (
-                              <li className=" " key={index}>
-                                {/* <motion.button
+                      <div className="relative px-4 -mt-16">
+                        <div className="bg-white p-6 rounded-lg shadow-xl mt-4 shadow-blue-300 dark:shadow-teal-300">
+                          <div className="p-4">
+                            <h2 className="mt-2 mb-2  font-bold text-center">
+                              {title}
+                            </h2>
+                            <p className="text-sm">
+                              Cras justo odio, dapibus ac facilisis in, egestas
+                              eget quam. Donec ullamcorper nulla non metus
+                              auctor fringilla. Cras justo odio, dapibus ac
+                              facilisis in, egestas eget quam. Donec ullamcorper
+                              nulla non metus auctor fringilla.
+                            </p>
+                          </div>
+                          <div className="py-4 border-t border-b text-xs text-gray-700 border-blue-400 dark:border-teal-400">
+                            <ul className="flex justify-center gap-8 ">
+                              {stack.map((item, index) => (
+                                <li className=" " key={index}>
+                                  {/* <motion.button
                                   whileHover={{ scale: 1.1 }}
                                   whileTap={{ scale: 0.9 }}
                                 > */}
                                   <Image
-                                    
                                     src={item}
                                     width="44px"
                                     height="44px"
                                     alt={title}
                                     className=""
                                   />
-                                {/* </motion.button> */}
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                        <div className=" flex items-center justify-center align-middle text-sm text-gray-600 gap-8 p-3">
-                          <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-300 hover:scale-105 duration-200 p-3 cursor-pointer">
-                            <Link href={git} target="_blank">
-                              <FaGithub size={25} />
-                            </Link>
+                                  {/* </motion.button> */}
+                                </li>
+                              ))}
+                            </ul>
                           </div>
+                          <div className=" flex items-center justify-center align-middle text-sm text-gray-600 gap-8 p-3">
+                            <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-300 hover:scale-105 duration-200 p-3 cursor-pointer">
+                              <Link href={git} target="_blank">
+                                <FaGithub size={25} />
+                              </Link>
+                            </div>
 
-                          <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-300 hover:scale-105 duration-200 p-3 cursor-pointer">
-                            <a href={url} target="_blank">
-                              <FiExternalLink size={25} />
-                            </a>
+                            <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-300 hover:scale-105 duration-200 p-3 cursor-pointer">
+                              <a href={url} target="_blank">
+                                <FiExternalLink size={25} />
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </motion.button>
-            </div>
+                </motion.button>
+              </div>
+            </SwiperSlide>
           ))}
-          {/* </Flickity>
-          </div> */}
-          
+        </Swiper>
+      
         </div>
+
+        {/* </div> */}
         {/* Button to all project */}
         <div className="flex items-center justify-center">
           <Link href="https://github.com/Quantumminded">
@@ -173,7 +189,11 @@ const Portfolio = () => {
           </Link>
         </div>
         {/* End button */}
-        
+        {/* <AwesomeSlider animation="fallAnimation">
+   <div data-src="/nextlogo.png" />
+   <div data-src="/twitter-green.png" />
+   <div data-src="/unsplash.png" />
+  </AwesomeSlider> */}
       </div>
     </div>
   );
