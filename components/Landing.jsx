@@ -19,7 +19,7 @@ const Landing = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ type: "spring", duration: 2.5, }}
           >
-            <p className="m-5">Hello, I'm</p>
+            <p className="m-5">Hi, I'm</p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: "-100vh" }}
