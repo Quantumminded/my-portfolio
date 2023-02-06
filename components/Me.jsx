@@ -2,27 +2,38 @@ import Link from "next/link";
 import React from "react";
 import me from "../public/me.png"
 import Image from "next/image";
+import {TypingText, TitleText } from './CustomText'
+import styles from '../styles';
+import { motion } from 'framer-motion';
+import { staggerContainer } from '../utils/motion';
 
 import { MdExpandMore } from "react-icons/md";
 
 const Me = () => {
   return (
-    <div className="w-full md:flex-row lg:flex ">
-      <div className=" ">
+    <div className="w-full md:flex-row lg:flex items-center">
+      <div className="">
       <Image
         src={me}
-        
-        
-        
         alt=""
         className=""
       />
       </div>
       <div className="max-w-screen-xl mx-auto px-16 py-16 text-center md:text-left">
-        
-      <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-600 dark:text-teal-400 font-bold text-center">
-          about
-        </h2>
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className={`${styles.innerWidth} mx-auto flex flex-col`}
+      >
+      <TypingText title="| About me" textStyles="text-center dark:text-white" />
+        <TitleText
+          className='text-black'
+          title={<>Discover who i'm </>}
+          textStyles="text-center"
+        />
+      </motion.div>
         <div className=" shadow-xl shadow-blue-300 dark:shadow-teal-300 my-2 px-8 dark:bg-white rounded-3xl py-4">
           <p className="py-4 max-w-2xl mx-auto">
             Nepenthe above my pallas of rapping guessing shore. Then chamber

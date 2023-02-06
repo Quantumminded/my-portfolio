@@ -3,7 +3,7 @@ import Link from "next/link";
 import Head from "next/head";
 
 // import components
-import Portfolio from "../components/Portfolio";
+import Portfolio2 from "../components/Portfolio2";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 import Landing from "../components/Landing";
@@ -14,6 +14,7 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 
 import luca from "../public/luca.png";
 import Image from "next/image";
+
 
 
 
@@ -176,7 +177,7 @@ export default function Home() {
         </section>
 
         {/* SKILL SECTION */}
-        <section id="skills" className="">
+        <section id="skills" className="md:p-10 md:py-20">
           <Skills />
         </section>
 
@@ -186,8 +187,8 @@ export default function Home() {
         </section>
 
         {/* PORFOLIO SECTION */}
-        <section id="portfolio" className="">
-          <Portfolio />
+        <section id="portfolio" className="md:p-10 md:py-20 ">
+          <Portfolio2 />
         </section>
 
         {/* CONTACT FORM */}

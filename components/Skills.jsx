@@ -15,6 +15,12 @@ import postgre from "../public/assets/experience/postgre.png";
 import svelte from "../public/assets/experience/svelte.png";
 import Image from "next/image";
 
+import {TypingText, TitleText } from './CustomText'
+import styles from '../styles';
+import { motion } from 'framer-motion';
+import { staggerContainer } from '../utils/motion';
+
+
 const Skills = () => {
   const experiences = [
     {
@@ -83,14 +89,20 @@ const Skills = () => {
   return (
     <div className="w-full">
       <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
-        <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-600 dark:text-teal-400 font-bold text-center">
-          skills
-        </h2>
-        <p className="py-4 mx-auto max-w-lg dark:text-gray-200">
-          While only that hauntedtell many purple no lent cushions more heart.
-          Soul cushions the still if i, hath lamplight mortals the rapping have
-          me and.
-        </p>
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className={`${styles.innerWidth} mx-auto flex flex-col`}
+      >
+        <TypingText title="| Skills" textStyles="text-center dark:text-white" />
+        <TitleText
+          className='text-black'
+          title={<>What i have  learnt<br className="md:block hidden" /> so far</>}
+          textStyles="text-center"
+        />
+        </motion.div>
 
         <div className="grid lg:grid-cols-4 gap-8">
           {experiences.map(({ id, title, src }) => (
