@@ -52,7 +52,7 @@ const ExploreCard = ({
             
           ))}
         </div> 
-        <p className="font-normal text-[16px] leading-[20.16px] text-white uppercase xs:text-[7px] sm:text-[13px] ">
+        <p className="font-normal text-[16px] leading-[20.16px] text-white uppercase xs:text-[7px] sm:text-[13px]  ">
           {description}
         </p>
         <div className=" flex items-center justify-center align-middle text-sm text-gray-600 gap-8 p-3">
