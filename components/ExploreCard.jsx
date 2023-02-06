@@ -1,9 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-
 import styles from "../styles/index";
 import { fadeIn } from "../utils/motion";
+import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 
 const ExploreCard = ({
   id,
@@ -54,6 +55,19 @@ const ExploreCard = ({
         <p className="font-normal text-[16px] leading-[20.16px] text-white uppercase xs:text-[7px] sm:text-[13px] ">
           {description}
         </p>
+        <div className=" flex items-center justify-center align-middle text-sm text-gray-600 gap-8 p-3">
+                            <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-300 hover:scale-105 duration-200 p-3 cursor-pointer">
+                              <a href={git} target="_blank">
+                                <FaGithub size={25} />
+                              </a>
+                            </div>
+
+                            <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-300 hover:scale-105 duration-200 p-3 cursor-pointer">
+                              <a href={url} target="_blank">
+                                <FiExternalLink size={25} />
+                              </a>
+                            </div>
+                          </div>
         <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white">
           {title}
         </h2>

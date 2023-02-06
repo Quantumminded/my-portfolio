@@ -11,6 +11,7 @@ import {TypingText, TitleText } from './CustomText'
 
 
 
+
 const Portfolio2 = () => {
   const [active, setActive] = useState('3');
  console.log(exploreWorlds)
