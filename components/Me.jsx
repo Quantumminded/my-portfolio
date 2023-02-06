@@ -36,25 +36,13 @@ const Me = () => {
       </motion.div>
         <div className=" shadow-xl shadow-blue-300 dark:shadow-teal-300 my-2 px-8 dark:bg-white rounded-3xl py-4">
           <p className="py-4 max-w-2xl mx-auto">
-            Nepenthe above my pallas of rapping guessing shore. Then chamber
-            midnight nevermore nevermore. Dared pallas nothing door me oer
-            myself so, name streaming door back beguiling was unseen at,
-            evilprophet is than burden little the and me at, there above heaven
-            in more no, nevermore sinking fowl the door oer.
+          As a full-stack developer, I am enthusiastic and motivated, driven by a deep passion for creating web applications that are both intuitive and impactful. My background in customer service management has provided me with valuable experience in problem-solving and communication, skills that I bring to my work as a developer. This unique combination allows me to approach projects with a user-centered mindset, ensuring that the solutions I create are not only technically sound but also meet the needs and expectations of the users.
           </p>
           <p className="py-4 max-w-2xl mx-auto">
-            Nepenthe above my pallas of rapping guessing shore. Then chamber
-            midnight nevermore nevermore. Dared pallas nothing door me oer
-            myself so, name streaming door back beguiling was unseen at,
-            evilprophet is than burden little the and me at, there above heaven
-            in more no, nevermore sinking fowl the door oer.
+          I recently completed a rigorous full-stack coding bootcamp, where I gained hands-on experience with a diverse set of technologies, including HTML, CSS, Tailwind, Bootstrap, React, Node, Express, SQL, and NoSQL. During the bootcamp, I developed a full-stack project from start to finish, working in a team environment utilizing the Scrum method and tools such as GitHub to manage the workflow. Our team's hard work and dedication paid off as we successfully deployed the web site on Netlify, showcasing our ability to build, test, and deploy a full-stack web application.
           </p>
           <p className="py-4 max-w-2xl mx-auto">
-            Nepenthe above my pallas of rapping guessing shore. Then chamber
-            midnight nevermore nevermore. Dared pallas nothing door me oer
-            myself so, name streaming door back beguiling was unseen at,
-            evilprophet is than burden little the and me at, there above heaven
-            in more no, nevermore sinking fowl the door oer.
+          These experiences have equipped me with the technical knowledge and real-world experience necessary to excel as a full-stack developer. I am eager to put my skills and drive to use on real-world projects, leveraging my ability to deliver impactful and user-centered digital solutions. My ultimate goal is to make a meaningful impact by creating digital solutions that enhance people's lives. I am highly dedicated to continuously improving my skills and producing exceptional work that exceeds expectations.
           </p>
 
           
