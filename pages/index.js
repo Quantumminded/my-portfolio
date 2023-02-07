@@ -173,7 +173,7 @@ export default function Home() {
 
       <main className="bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40 w-fit">
         {/* ABOUT SECTION */}
-        <section id="home" className="sm:flex-row md-flex-row lg:flex py-28 lg:px-80 lg:gap-40">
+        <section id="home" className="sm:flex-row md-flex-row lg:flex py-28  justify-center lg:gap-40">
           <Landing />
         </section>
 
