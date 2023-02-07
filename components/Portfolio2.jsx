@@ -13,7 +13,7 @@ import {TypingText, TitleText } from './CustomText'
 
 
 const Portfolio2 = () => {
-  const [active, setActive] = useState('3');
+  const [active, setActive] = useState('4');
  console.log(exploreWorlds)
   return (
     <section className={`${styles.paddings}`} id="explore">

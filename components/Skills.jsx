@@ -75,12 +75,12 @@ const Skills = () => {
     },
     {
       id: 11,
-      title: "Mongo",
+      title: "MongoDb",
       src: mongo,
     },
     {
       id: 12,
-      title: "Postgre",
+      title: "Postgresql",
       src: postgre,
     },
     
