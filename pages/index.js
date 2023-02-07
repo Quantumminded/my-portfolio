@@ -14,6 +14,7 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 
 import luca from "../public/luca.png";
 import Image from "next/image";
+import Footer from "../components/Footer";
 
 
 
@@ -195,6 +196,10 @@ export default function Home() {
         <section id="contact">
           <Contact />
         </section>
+
+        <section id="">
+        <Footer />
+      </section>
       </main>
     </div>
   );
