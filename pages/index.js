@@ -11,7 +11,7 @@ import Me from "../components/Me";
 
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
-
+import logo from "../public/Logo.png"
 import luca from "../public/luca.png";
 import Image from "next/image";
 import Footer from "../components/Footer";
@@ -72,7 +72,7 @@ export default function Home() {
         >
           <div className="flex justify-between items-center w-full h-full max-w-screen-xl mx-auto p-3">
             
-            <Image src={luca} height="70px" width="100px" objectFit="" />
+            <Image src={logo} height="80px" width="80px" objectFit="" />
             
 
             <div>
