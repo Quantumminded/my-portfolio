@@ -40,10 +40,9 @@ const Contact = () => {
         />
         <div class="container text-gray-800 px-4 md:px-12">
           <div
-            class="block rounded-lg shadow-xl shadow-blue-300 dark:shadow-teal-300 py-10 md:py-12 px-2 md:px-6"
+            class="block dark:bg-gray-200 rounded-lg shadow-xl shadow-blue-300 dark:shadow-teal-300 py-10 md:py-12 px-2 md:px-6"
             style={{
               marginTop: "-100px",
-              background: "hsla(0, 0%, 100%, 0.8)",
               backdropFilter: "blur(30px)",
             }}
           >

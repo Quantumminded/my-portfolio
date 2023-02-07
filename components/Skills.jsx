@@ -108,7 +108,7 @@ const Skills = () => {
           {experiences.map(({ id, title, src }) => (
             <div
               key={id}
-              className="dark:bg-white flex flex-col lg:flex-row gap-10 lg:gap-0 items-center justify-between p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300
+              className="dark:bg-gray-200 flex flex-col lg:flex-row gap-10 lg:gap-0 items-center justify-between p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300
               odd:shadow-rose-400 even:shadow-blue-400"
             >
               <Image src={src} width="64px" height="64px" alt={title} />
