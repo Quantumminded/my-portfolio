@@ -104,9 +104,9 @@ const Contact = () => {
                 <div class="flex items-start">
                   <div class="shrink-0">
                     <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
-                      <Link href="" target="_blank">
+                      <div>
                         <AiFillMail size={25} />
-                      </Link>
+                      </div>
                     </div>
                   </div>
                   <div class="grow ml-6">
@@ -119,9 +119,9 @@ const Contact = () => {
                 <div class="flex items-start">
                   <div class="shrink-0">
                     <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
-                      <Link href="https://www.linkedin.com/in/lucastringhetti/" target="_blank">
+                      <div>
                         <FaPhone size={25} />
-                      </Link>
+                      </div>
 
                       
                     </div>
@@ -132,19 +132,20 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
+              
               <div class="mb-12 md:mb-0 grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
                 <div class="flex align-start">
                   <div class="shrink-0">
                     <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
-                      <Link href="https://github.com/Quantumminded" target="_blank">
+                      <a href="https://github.com/Quantumminded" target="_blank">
                         <FaGithub size={25} />
-                      </Link>
+                      </a>
                     </div>
                   </div>
                   <div class="grow ml-6">
-                    
-                    <p class=" font-bold py-3">GitHub</p>
-                   
+                  <a href="https://github.com/Quantumminded" target="_blank">
+                    <p class=" font-bold py-3 underline">GitHub</p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -152,15 +153,15 @@ const Contact = () => {
                 <div class="flex items-start">
                   <div class="shrink-0">
                     <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
-                      <Link href="https://www.linkedin.com/in/lucastringhetti/" target="_blank">
+                      <a href="https://www.linkedin.com/in/lucastringhetti/" target="_blank">
                         <FaLinkedin size={25} />
-                      </Link>
+                      </a>
                     </div>
                   </div>
                   <div class="grow ml-6">
-                    
-                    <p class=" font-bold py-3">LinkedIn</p>
-                   
+                  <a href="https://www.linkedin.com/in/lucastringhetti/" target="_blank"> 
+                    <p class=" font-bold py-3 underline">LinkedIn</p>
+                    </a>
                   </div>
                 </div>
               </div>
