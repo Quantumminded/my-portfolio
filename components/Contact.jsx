@@ -10,7 +10,7 @@ import { staggerContainer } from "../utils/motion";
 
 const Contact = () => {
   return (
-    <div class="container  px-6 mx-auto">
+    <div class="container px-6 mx-auto">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -31,14 +31,14 @@ const Contact = () => {
 
       <section class=" text-gray-800">
         <div
-          class="relative overflow-hidden bg-no-repeat bg-contain mb-32 lg:mb-32 sm:m-28 xs:m-16"
+          class="relative overflow-hidden bg-no-repeat bg-contain mb-32 lg:mb-32 sm:mb-28 xs:m-16"
           style={{
             backgroundImage: `url(/contact.png)`,
             backgroundPosition: "50%",
             height: "30rem",
           }}
         />
-        <div class="container text-gray-800 px-4 md:px-12">
+        <div class="container text-gray-800 px-4 md:px-16 ">
           <div
             class="block dark:bg-gray-200 rounded-lg shadow-xl shadow-blue-300 dark:shadow-teal-300 py-10 md:py-12 px-2 md:px-6"
             style={{

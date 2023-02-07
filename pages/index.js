@@ -171,7 +171,7 @@ export default function Home() {
         </div>
       </nav>
 
-      <main className="bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
+      <main className="bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40 lg:py-32">
         {/* ABOUT SECTION */}
         <section id="home" className="sm:flex-row md-flex-row lg:flex py-28 px-20">
           <Landing />
@@ -193,7 +193,7 @@ export default function Home() {
         </section>
 
         {/* CONTACT FORM */}
-        <section id="contact">
+        <section id="contact" className="p-20">
           <Contact />
         </section>
 
