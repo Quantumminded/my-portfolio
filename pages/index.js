@@ -193,7 +193,7 @@ export default function Home() {
         </section>
 
         {/* CONTACT FORM */}
-        <section id="contact" className="p-20">
+        <section id="contact" className="pb-10">
           <Contact />
         </section>
 
