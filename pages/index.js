@@ -171,7 +171,7 @@ export default function Home() {
         </div>
       </nav>
 
-      <main className="bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40 lg:py-32">
+      <main className="bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40 w-fit">
         {/* ABOUT SECTION */}
         <section id="home" className="sm:flex-row md-flex-row lg:flex py-28 lg:px-80 lg:gap-40">
           <Landing />
@@ -183,7 +183,7 @@ export default function Home() {
         </section>
 
         {/* ME SECTION */}
-        <section id="about" className="pt-28 px-4">
+        <section id="about" className="pt-28">
           <Me />
         </section>
 
@@ -196,12 +196,14 @@ export default function Home() {
         <section id="contact" className="pb-10 pt-20">
           <Contact />
         </section>
+        
 
-      </main>
-      {/* Footer */}
+        {/* Footer */}
       <section className="bg-white dark:bg-gray-900">
           <Footer />
         </section>
+      </main>
+      
     </div>
 
     

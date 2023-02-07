@@ -42,7 +42,7 @@ const Landing = () => {
             }}
           />
         </h3>
-        <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto px-5">
+        <p className="text-lg py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto px-5">
           A driven full-stack developer with a passion for creating intuitive
           and impactful web applications. With a background in customer service
           management, I bring a unique perspective to my work, honing strong
