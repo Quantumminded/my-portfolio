@@ -25,7 +25,6 @@ const ExploreCard = ({
     } flex items-center justify-center min-w-[170px] h-[700px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer`}
     onClick={() => handleClick(id)}
   >
-    
     <img
       src={imgUrl}
       alt={title}
@@ -40,34 +39,31 @@ const ExploreCard = ({
         <div
           className={`flex justify-items-center w-[65px] h-[65px] rounded-[24px] glassmorphism mb-[-35px] gap-8`}
         >
-          
           {stack.map((item, index) => (
-            
             <img
               key={index}
               src={item}
               alt={title}
               className="w-1/2 h-1/2 object-contain xs:pb-2"
             />
-            
           ))}
-        </div> 
+        </div>
         <p className="font-normal text-[16px] leading-[20.16px] text-white uppercase xs:text-[7px] sm:text-[13px]  ">
           {description}
         </p>
         <div className=" flex items-center justify-center align-middle text-sm text-gray-600 gap-8 p-3">
-                            <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-300 hover:scale-105 duration-200 p-3 cursor-pointer">
-                              <a href={git} target="_blank">
-                                <FaGithub size={25} />
-                              </a>
-                            </div>
+          <div className="flex items-center justify-center rounded-full dark:bg-teal-400 bg-blue-600  hover:scale-105 duration-200 p-3 cursor-pointer">
+            <a href={git} target="_blank">
+              <FaGithub size={25} className="fill-white dark:fill-black"/>
+            </a>
+          </div>
 
-                            <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 dark:shadow-teal-300 hover:scale-105 duration-200 p-3 cursor-pointer">
-                              <a href={url} target="_blank">
-                                <FiExternalLink size={25} />
-                              </a>
-                            </div>
-                          </div>
+          <div className="flex items-center justify-center rounded-full dark:bg-teal-400 bg-blue-600 hover:scale-105 duration-200 p-3 cursor-pointer">
+            <a href={url} target="_blank">
+              <FiExternalLink size={25} className="bg-white dark:bg-transparent rounded-full p-1" />
+            </a>
+          </div>
+        </div>
         <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white">
           {title}
         </h2>
