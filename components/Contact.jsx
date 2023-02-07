@@ -115,9 +115,8 @@ const Contact = () => {
                     </div>
                   </div>
                   <div class="grow ml-6">
-                    <p class="font-bold mb-1">Technical support</p>
-                    <p class="text-gray-500">support@example.com</p>
-                    <p class="text-gray-500">+1 234-567-89</p>
+                    <p class="font-bold pt-3">Email</p>
+                    <p class="text-gray-500">lukkino31@gmail.com</p>
                   </div>
                 </div>
               </div>
@@ -134,9 +133,9 @@ const Contact = () => {
                     </div>
                   </div>
                   <div class="grow ml-6">
-                    <p class="font-bold mb-1">Sales questions</p>
-                    <p class="text-gray-500">sales@example.com</p>
-                    <p class="text-gray-500">+1 234-567-89</p>
+                    
+                    <p class=" font-bold py-3">LinkedIn</p>
+                   
                   </div>
                 </div>
               </div>
@@ -153,9 +152,9 @@ const Contact = () => {
                     </div>
                   </div>
                   <div class="grow ml-6">
-                    <p class="font-bold mb-1">Press</p>
-                    <p class="text-gray-500">press@example.com</p>
-                    <p class="text-gray-500">+1 234-567-89</p>
+                    
+                    <p class=" font-bold py-3">GitHub</p>
+                   
                   </div>
                 </div>
               </div>
