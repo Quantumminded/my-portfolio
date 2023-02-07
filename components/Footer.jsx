@@ -8,7 +8,31 @@ function Footer() {
           <nav class="flex flex-wrap justify-center -mx-5 -my-2">
             <div class="px-5 py-2">
               <a
-                href="#"
+                href="#home"
+                class="text-base leading-6 text-gray-500 hover:text-gray-900"
+              >
+                Home
+              </a>
+            </div>
+            <div class="px-5 py-2">
+              <a
+                href="#portfolio"
+                class="text-base leading-6 text-gray-500 hover:text-gray-900"
+              >
+                Portfolio
+              </a>
+            </div>
+            <div class="px-5 py-2">
+              <a
+                href="#skills"
+                class="text-base leading-6 text-gray-500 hover:text-gray-900"
+              >
+                Skills
+              </a>
+            </div>
+            <div class="px-5 py-2">
+              <a
+                href="#about"
                 class="text-base leading-6 text-gray-500 hover:text-gray-900"
               >
                 About
@@ -16,49 +40,16 @@ function Footer() {
             </div>
             <div class="px-5 py-2">
               <a
-                href="#"
-                class="text-base leading-6 text-gray-500 hover:text-gray-900"
-              >
-                Blog
-              </a>
-            </div>
-            <div class="px-5 py-2">
-              <a
-                href="#"
-                class="text-base leading-6 text-gray-500 hover:text-gray-900"
-              >
-                Team
-              </a>
-            </div>
-            <div class="px-5 py-2">
-              <a
-                href="#"
-                class="text-base leading-6 text-gray-500 hover:text-gray-900"
-              >
-                Pricing
-              </a>
-            </div>
-            <div class="px-5 py-2">
-              <a
-                href="#"
+                href="#contact"
                 class="text-base leading-6 text-gray-500 hover:text-gray-900"
               >
                 Contact
               </a>
             </div>
-            <div class="px-5 py-2">
-              <a
-                href="#"
-                class="text-base leading-6 text-gray-500 hover:text-gray-900"
-              >
-                Terms
-              </a>
-            </div>
+            
           </nav>
+          {/* Icons */}
           <div class="flex justify-center mt-8 space-x-6">
-            
-            
-            
             <a href="https://github.com/Quantumminded" class="text-gray-400 hover:text-gray-500">
               <span class="sr-only">GitHub</span>
               <svg
