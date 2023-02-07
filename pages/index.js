@@ -173,7 +173,7 @@ export default function Home() {
 
       <main className="bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40 lg:py-32">
         {/* ABOUT SECTION */}
-        <section id="home" className="sm:flex-row md-flex-row lg:flex py-28 px-20">
+        <section id="home" className="sm:flex-row md-flex-row lg:flex py-28 lg:px-80 lg:gap-40">
           <Landing />
         </section>
 
@@ -193,7 +193,7 @@ export default function Home() {
         </section>
 
         {/* CONTACT FORM */}
-        <section id="contact" className="pb-10">
+        <section id="contact" className="pb-10 pt-20">
           <Contact />
         </section>
 

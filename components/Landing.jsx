@@ -11,7 +11,7 @@ const Landing = () => {
 
   return (
     <>
-      <div className="text-center py-24 px-auto mx-auto">
+      <div className="text-center py-24 ">
         <h2 className=" text-blue-600 dark:text-teal-400 text-3xl md:text-6xl tracking-wider uppercase font-bold text-center ">
         
           <motion.div
@@ -29,7 +29,7 @@ const Landing = () => {
             <p className="">Luca Stringhetti</p>
           </motion.div>
         </h2>
-        <h3 className="text-4xl dark:text-white font-bold">
+        <h3 className="text-2xl md:text-3xl lg:text-5xl dark:text-white font-bold ">
           <Typewriter
             options={{
               strings: [
