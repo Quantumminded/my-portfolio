@@ -197,10 +197,14 @@ export default function Home() {
           <Contact />
         </section>
 
-        <section id="">
-        <Footer />
-      </section>
       </main>
+      {/* Footer */}
+      <section className="bg-white dark:bg-gray-900">
+          <Footer />
+        </section>
     </div>
+
+    
+    
   );
 }
