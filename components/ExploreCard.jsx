@@ -111,16 +111,16 @@ const ExploreCard = ({
         
       </div>
 
-      <div className=" flex items-center justify-center align-middle text-sm text-gray-600 gap-8 p-3">
+      <div className=" flex items-center justify-center align-middle text-sm text-gray-600 gap-8 p-2">
         <div className="flex items-center justify-center rounded-full dark:bg-teal-400 bg-blue-600  hover:scale-105 duration-200 p-3 cursor-pointer">
           <a href={git} target="_blank">
-            <FaGithub size={25} className="fill-white dark:fill-black"/>
+            <FaGithub size={20} className="fill-white dark:fill-black"/>
           </a>
         </div>
 
         <div className="flex items-center justify-center rounded-full dark:bg-teal-400 bg-blue-600 hover:scale-105 duration-200 p-3 cursor-pointer">
           <a href={url} target="_blank">
-            <FiExternalLink size={25} className="bg-white dark:bg-transparent rounded-full p-1" />
+            <FiExternalLink size={20} className="bg-white dark:bg-transparent rounded-full p-1" />
           </a>
         </div>
       </div>
