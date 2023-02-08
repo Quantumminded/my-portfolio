@@ -82,9 +82,18 @@ const Me = () => {
     // </div>
     
     <div className="w-full md:flex-row lg:flex items-center">
+      <motion.div
+        className="flex justify-center object-contain"
+        whileInView="show"
+        border-radius="50%"
+        initial={{ opacity: 0, x: "-100vh" }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ type: "spring", duration: 2.5, }}
+      >
       <div className="">
         <Image src={me} alt="" className="" />
       </div>
+      </motion.div>
       <div className="max-w-screen-xl mx-auto px-16 py-16 text-center">
         <motion.div
           variants={staggerContainer}
