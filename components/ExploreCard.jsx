@@ -92,7 +92,7 @@ const ExploreCard = ({
       <h2 className=" font-semibold sm:text-[32px] text-[24px] text-white text-center">
         {title}
       </h2>
-      <p className="font-normal text-[16px] leading-[20.16px] text-white uppercase xs:text-[10px] sm:text-[13px] mb-3 text-center">
+      <p className="font-normal text-[16px] leading-[20.16px] text-white xs:text-[10px] sm:text-[13px] mb-3 text-center">
         {description}
       </p>
       
