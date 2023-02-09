@@ -103,8 +103,9 @@ const ExploreCard = ({
         {stack.map((item, index) => (
           <img
             key={index}
-            src={item}
-            alt={title}
+            src={item.imgUrl}
+            alt={item.name}
+            title={item.name}
             className="w-1/2 h-1/2 object-contain xs:pb-2"
           />
         ))}
