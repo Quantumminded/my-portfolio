@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <>
+    <footer >
       <section class="p-5">
         <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
           <nav class="flex flex-wrap justify-center -mx-5 -my-2">
@@ -50,7 +50,7 @@ function Footer() {
           </nav>
           {/* Icons */}
           <div class="flex justify-center mt-8 space-x-6">
-            <a href="https://github.com/Quantumminded" class="text-gray-400 hover:text-gray-500">
+            <a href="https://github.com/Quantumminded" class="text-gray-400 hover:text-gray-500" target="_blank">
               <span class="sr-only">GitHub</span>
               <svg
                 class="w-6 h-6"
@@ -65,7 +65,7 @@ function Footer() {
                 ></path>
               </svg>
             </a>
-            <a href="https://www.linkedin.com/in/lucastringhetti/" class="text-gray-400 hover:text-gray-500">
+            <a href="https://www.linkedin.com/in/lucastringhetti/" class="text-gray-400 hover:text-gray-500" target="_blank">
               <span class="sr-only">LinkedIn</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +83,7 @@ function Footer() {
           </p>
         </div>
       </section>
-    </>
+    </footer>
   );
 }
 
