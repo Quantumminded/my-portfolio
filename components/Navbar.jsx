@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import logo from "../public/Logo.png";
-import luca from "../public/luca.png";
 import Image from "next/image";
 
 import {
