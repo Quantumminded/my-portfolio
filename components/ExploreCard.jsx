@@ -44,17 +44,8 @@ const ExploreCard = ({
   //           />
   //         ))}
   //       </div>
-  //       <div className=" flex items-center justify-center align-middle text-sm text-gray-600 gap-8 p-3">
-  //         <div className="flex items-center justify-center rounded-full dark:bg-teal-400 bg-blue-600 hover:scale-105 duration-200 p-3 cursor-pointer">
-  //           <a href={url} target="_blank">
-  //             <FiExternalLink size={25} className="bg-white dark:bg-transparent rounded-full p-1" />
-  //           </a>
-  //         </div>
-  //       </div>
-  //       <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white">
-  //         {title}
-  //       </h2>
-  //     </div>
+  //       
+  //       
   //   )}
   // </motion.div>
      
