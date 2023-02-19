@@ -25,24 +25,6 @@ const ExploreCard = ({
   //   } flex items-center justify-center min-w-[170px] h-[700px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer`}
   //   onClick={() => handleClick(id)}
   // >
-  //   
-  //   {active !== id ? (
-  //     <h3 className="font-semibold sm:text-[26px] text-[18px] text-white absolute z-0 lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0]">
-  //       {title}
-  //     </h3>
-  //   ) : (
-  //     <div className="absolute bottom-0 p-4 flex justify-start w-full flex-col bg-[rgba(0,0,0,0.85)] rounded-b-[24px] rounded-xl xs:p-3 md:p-6">
-  //       <div
-  //         className={`flex justify-items-center w-[65px] h-[65px] rounded-[24px] glassmorphism mb-[-35px] gap-8`}
-  //       >
-  //         {stack.map((item, index) => (
-  //           <img
-  //             key={index}
-  //             src={item}
-  //             alt={title}
-  //             className="w-1/2 h-1/2 object-contain xs:pb-2"
-  //           />
-  //         ))}
   //       </div>
   //       
   //       
