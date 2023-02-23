@@ -94,7 +94,7 @@ const Me = () => {
         <Image src={me} alt="" className="" />
       </div>
       </motion.div>
-      <div className="max-w-screen-xl mx-auto px-16 py-16 text-center">
+      <div className="max-w-screen-md mx-auto px-16 py-16 text-center">
         <motion.div
           variants={staggerContainer}
           initial="hidden"

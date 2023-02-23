@@ -72,6 +72,7 @@ export const exploreWorlds = [
       git: "https://github.com/Quantumminded/Hacker-news",
       description: "I developed a Hacker News reader that fetches news articles directly from the HN API. My focus was to display all the articles about a specific topic. The site was built using functional components and hooks in React, allowing for a seamless user experience. The news articles are fetched from the API and displayed on the site, with the ability to search for any topic of interest through the search bar. This project showcases my skills in API integration, React and its hooks, as well as my understanding of UI/UX design.",
     },
+    
   ];
   
   export const startingFeatures = [
