@@ -72,7 +72,21 @@ export const exploreWorlds = [
       git: "https://github.com/Quantumminded/Hacker-news",
       description: "I developed a Hacker News reader that fetches news articles directly from the HN API. My focus was to display all the articles about a specific topic. The site was built using functional components and hooks in React, allowing for a seamless user experience. The news articles are fetched from the API and displayed on the site, with the ability to search for any topic of interest through the search bar. This project showcases my skills in API integration, React and its hooks, as well as my understanding of UI/UX design.",
     },
-    
+    {
+      id: '6',
+      imgUrl: '/meteo.png',
+      title: 'Weather App',
+      url: "https://meteoversium.netlify.app",
+      stack: [
+        { name: 'HTML', imgUrl: '/html.png' }, 
+        { name: 'CSS', imgUrl: '/css.png' },
+        { name: 'JavaScript', imgUrl: '/javascript.png' },
+        { name: 'React', imgUrl: '/react.png' },
+        ],
+      git: "https://github.com/Quantumminded/WeatherApp-React",
+      description: "This project is a simple weather app built using React and the OpenWeatherMap API. The user can enter a city name in the search bar and get the current weather conditions for that city. The app displays the temperature in Celsius, along with a brief description of the weather. The background color of the app changes based on the temperature, with warmer temperatures resulting in a warmer color scheme. The app also displays the current date and time, along with the name of the city and country for the weather conditions.",
+    },
+
   ];
   
   export const startingFeatures = [
