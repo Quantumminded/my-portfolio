@@ -86,6 +86,20 @@ export const exploreWorlds = [
       git: "https://github.com/Quantumminded/WeatherApp-React",
       description: "This project is a simple weather app built using React and the OpenWeatherMap API. The user can enter a city name in the search bar and get the current weather conditions for that city. The app displays the temperature in Celsius, along with a brief description of the weather. The background color of the app changes based on the temperature, with warmer temperatures resulting in a warmer color scheme. The app also displays the current date and time, along with the name of the city and country for the weather conditions.",
     },
+    {
+      id: '7',
+      imgUrl: '/expenses.png',
+      title: 'Expense Tracker',
+      url: "https://starlit-custard-e2d144.netlify.app/",
+      stack: [
+        { name: 'HTML', imgUrl: '/html.png' }, 
+        { name: 'CSS', imgUrl: '/css.png' },
+        { name: 'JavaScript', imgUrl: '/javascript.png' },
+        { name: 'React', imgUrl: '/react.png' },
+        ],
+      git: "https://github.com/Quantumminded/Expense-tracker",
+      description: "This project is a simple expense tracker built using React and hooks such as useState, useContext, and useReducer, along with the Context API. The user can add and remove expenses, along with setting a budget and tracking their remaining budget. The app displays a list of expenses, including their description, amount, and date. The user can also filter expenses by date or search for specific expenses. The app provides a clear and easy-to-use interface for managing expenses, helping users stay on top of their finances.",
+    },
 
   ];
   
