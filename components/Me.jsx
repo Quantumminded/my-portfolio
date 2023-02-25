@@ -56,27 +56,9 @@ const Me = () => {
     //         the web site on Netlify, showcasing our ability to build, test, and
     //         deploy a full-stack web application.
     //       </p>
-    //       <p className="py-4 max-w-2xl mx-auto">
-    //         These experiences have equipped me with the technical knowledge and
-    //         real-world experience necessary to excel as a full-stack developer.
-    //         I am eager to put my skills and drive to use on real-world projects,
-    //         leveraging my ability to deliver impactful and user-centered digital
-    //         solutions. My ultimate goal is to make a meaningful impact by
-    //         creating digital solutions that enhance people's lives. I am highly
-    //         dedicated to continuously improving my skills and producing
-    //         exceptional work that exceeds expectations.
-    //       </p>
     //     </div>
 
     //     <div className="flex items-center justify-center p-6">
-    //       <a href="/resume.pdf" target="_blank">
-    //         <div className="group flex items-center justify-center bg-blue-600 dark:bg-teal-400 text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer">
-    //           resume
-    //           <span className="-rotate-90 duration-100 ease-in group-hover:rotate-0">
-    //             <MdExpandMore size={25} />
-    //           </span>
-    //         </div>
-    //       </a>
     //     </div>
     //   </div>
     // </div>
