@@ -45,17 +45,6 @@ const Me = () => {
     //         are not only technically sound but also meet the needs and
     //         expectations of the users.
     //       </p>
-    //       <p className="py-4 max-w-2xl mx-auto">
-    //         I recently completed a rigorous full-stack coding bootcamp, where I
-    //         gained hands-on experience with a diverse set of technologies,
-    //         including HTML, CSS, Tailwind, Bootstrap, React, Node, Express, SQL,
-    //         and NoSQL. During the bootcamp, I developed a full-stack project
-    //         from start to finish, working in a team environment utilizing the
-    //         Scrum method and tools such as GitHub to manage the workflow. Our
-    //         team's hard work and dedication paid off as we successfully deployed
-    //         the web site on Netlify, showcasing our ability to build, test, and
-    //         deploy a full-stack web application.
-    //       </p>
     //     </div>
 
     //     <div className="flex items-center justify-center p-6">
