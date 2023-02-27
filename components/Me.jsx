@@ -34,17 +34,7 @@ const Me = () => {
     //       />
     //     </motion.div>
     //     <div className=" shadow-xl shadow-blue-300 dark:shadow-teal-300 my-2 px-8 dark:bg-gray-200 rounded-3xl py-4">
-    //       <p className="py-4 max-w-2xl mx-auto">
-    //         As a full-stack developer, I am enthusiastic and motivated, driven
-    //         by a deep passion for creating web applications that are both
-    //         intuitive and impactful. My background in customer service
-    //         management has provided me with valuable experience in
-    //         problem-solving and communication, skills that I bring to my work as
-    //         a developer. This unique combination allows me to approach projects
-    //         with a user-centered mindset, ensuring that the solutions I create
-    //         are not only technically sound but also meet the needs and
-    //         expectations of the users.
-    //       </p>
+    //       
     //     </div>
 
     //     <div className="flex items-center justify-center p-6">
