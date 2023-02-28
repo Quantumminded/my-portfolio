@@ -33,9 +33,6 @@ const Me = () => {
     //         textStyles="text-center"
     //       />
     //     </motion.div>
-    //     <div className=" shadow-xl shadow-blue-300 dark:shadow-teal-300 my-2 px-8 dark:bg-gray-200 rounded-3xl py-4">
-    //       
-    //     </div>
 
     //     <div className="flex items-center justify-center p-6">
     //     </div>
