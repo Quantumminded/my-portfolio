@@ -35,7 +35,7 @@ const Landing = () => {
               strings: [
                 "Front End Developer",
                 "Full Stack Developer",
-                "Beck End Developer",
+                "Back End Developer",
               ],
               autoStart: true,
               loop: true,
