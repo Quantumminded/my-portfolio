@@ -3,7 +3,7 @@
 This is my unique and professionally crafted portfolio site. The design focuses on delivering a streamlined and efficient experience for showcasing my skills and projects. The interface is clean and visually appealing, featuring graphics and design elements that have been personally created for use within the site.
 
 ## Technologies Used
-- JavaScript (JS)
+- JavaScript
 - Next.js
 - Tailwind CSS
 
