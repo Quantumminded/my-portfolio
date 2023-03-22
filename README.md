@@ -19,5 +19,5 @@ This is my unique and professionally crafted portfolio site. The design focuses 
 3. Start the server using `npm run dev`.
 
 ## Usage
-The portfolio website allows visitors to easily navigate and learn more about my background, expertise, and past work. It is designed to provide a seamless and interactive experience, utilizing the power of Tailwind for efficient and responsive design.
+The portfolio website allows visitors to easily navigate and learn more about my background and expertise. It is designed to provide a seamless and interactive experience, utilizing the power of Tailwind for efficient and responsive design.
 
