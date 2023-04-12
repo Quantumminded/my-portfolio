@@ -8,10 +8,10 @@ This is my unique and professionally crafted portfolio site. The design focuses 
 - Tailwind CSS
 
 ## Features
-- Clean and visually appealing design
-- Streamlined and efficient experience for showcasing skills and projects
-- Personalized graphics and design elements
-- Utilizes the power of Tailwind for a seamless and interactive experience
+- Clean and visually appealing design.
+- Streamlined and efficient experience for showcasing skills and projects.
+- Personalized graphics and design elements.
+- Utilizes the power of Tailwind for a seamless and interactive experience.
 
 ## Installation
 1. Clone the repository.
