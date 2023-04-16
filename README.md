@@ -17,9 +17,9 @@ This is my unique and professionally crafted portfolio site. The design focuses 
 
 ## Installation
 
-1. Clone the repository.
-2. Install the required dependencies using `npm install`.
-3. Start the server using `npm run dev`.
+1. Clone the repository
+2. Install the required dependencies using `npm install`
+3. Start the server using `npm run dev`
 
 ## Usage
 
