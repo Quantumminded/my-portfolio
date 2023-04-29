@@ -23,9 +23,9 @@ The website has the following features:
 
 To install this website on your local machine, please follow these steps:
 
-1. Clone the repository
-2. Install the required dependencies using `npm install`
-3. Start the server using `npm run dev`
+1. Clone the repository.
+2. Install the required dependencies using `npm install`.
+3. Start the server using `npm run dev`.
 
 ## Usage of My Portfolio Website
 
