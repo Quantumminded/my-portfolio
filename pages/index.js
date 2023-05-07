@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import Head from "next/head";
-
 // import components
 import Portfolio2 from "../components/Portfolio2";
 import Skills from "../components/Skills";
