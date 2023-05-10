@@ -43,11 +43,8 @@ const ExploreCard = ({
       <p className="font-normal text-[16px] leading-[20.16px] text-white xs:text-[10px] sm:text-[13px] mb-3 text-center">
         {description}
       </p>
-      
-      <div
-        className={`flex justify-items-center  w-[65px] h-[65px] rounded-[24px] glassmorphism mb-[-35px] gap-8 `}
-      >
-        
+      <div className={`flex justify-items-center  w-[65px] h-[65px] rounded-[24px] glassmorphism mb-[-35px] gap-8 `}>
+         
         {stack.map((item, index) => (
           <img
             key={index}
