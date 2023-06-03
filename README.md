@@ -14,10 +14,10 @@ To create this website, I have used the following technologies:
 
 The website has the following features:
 
-- Clean and visually appealing design.
-- Streamlined and efficient experience for showcasing skills and projects.
-- Personalized graphics and design elements.
-- Utilizes the power of Tailwind for a seamless and interactive experience.
+- Clean and visually appealing design
+- Streamlined and efficient experience for showcasing skills and projects
+- Personalized graphics and design elements
+- Utilizes the power of Tailwind for a seamless and interactive experience
 
 ## Installation
 
