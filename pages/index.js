@@ -3,7 +3,7 @@ import Head from "next/head";
 // import components
 import Portfolio2 from "../components/Portfolio2";
 import Skills from "../components/Skills";
-import Contact from "../components/Contact";
+import Contact from "../components/Contact.new";
 import Landing from "../components/Landing";
 import Me from "../components/Me";
 import Footer from "../components/Footer";

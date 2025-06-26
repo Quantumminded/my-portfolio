@@ -30,19 +30,18 @@ const Contact = () => {
       </motion.div>
 
       <section class=" text-gray-800 w-[100%]">
-        <div
+        {/* <div
           class="relative overflow-hidden bg-no-repeat bg-contain mb-32 lg:mb-32 sm:m-28  mt-5"
           style={{
             backgroundImage: `url(/contact.png)`,
             backgroundPosition: "50%",
             height: "30rem",
           }}
-        />
+        /> */}
         <div class="container text-gray-800 px-4 md:px-12">
           <div
             class="block dark:bg-gray-200 rounded-lg shadow-xl shadow-blue-300 dark:shadow-teal-300 py-10 md:py-12 px-2 md:px-6"
             style={{
-              marginTop: "-100px",
               backdropFilter: "blur(30px)",
             }}
           >

@@ -54,7 +54,7 @@ const Landing = () => {
       </div>
 
 
-      <motion.div
+      {/* <motion.div
         className="flex justify-center object-contain"
         border-radius="50%"
         initial={{ opacity: 0, scale: 0.5 }}
@@ -75,7 +75,7 @@ const Landing = () => {
         <div className="relative mx-auto bg-gradient-to-b dark:from-teal-500 from-blue-600 rounded-full w-80 h-80 overflow-hidden md:my-24 md:h-96 md:w-96 sm:mx-10">
           <Image src={deved} layout="fill" objectFit="cover" />
         </div>
-      </motion.div>
+      </motion.div> */}
     </>
   );
 };

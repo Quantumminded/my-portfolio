@@ -40,7 +40,7 @@ const Me = () => {
     // </div>
     
     <div className="w-full md:flex-row lg:flex items-center">
-      <motion.div
+      {/* <motion.div
         className="flex justify-center object-contain"
         whileInView="show"
         border-radius="50%"
@@ -51,7 +51,7 @@ const Me = () => {
       <div className="">
         <Image src={me} alt="" className="" />
       </div>
-      </motion.div>
+      </motion.div> */}
       <div className="max-w-screen-md mx-auto px-16 py-16 text-center">
         <motion.div
           variants={staggerContainer}
