@@ -8,12 +8,13 @@ import Landing from "../components/Landing";
 import Me from "../components/Me";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
-  
+
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div className={darkMode ? "dark" : ""} style={{ fontFamily: "'Inter', 'Poppins', sans-serif", background: darkMode ? "#22223B" : "#F8F9FA" }}>
       <Head>
         <title>Luca Stringhetti Portfolio</title>
         <meta name="Luca Stringhetti Portfolio" content="personal portfolio of luca stringhetti" />
@@ -21,35 +22,84 @@ export default function Home() {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@600;800&display=swap" rel="stylesheet" />
       </Head>
       {/* NAVBAR SECTION */}      
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <main className="bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40 ">
+      <main className="bg-white px-4 sm:px-6 md:px-20 lg:px-40 dark:bg-gray-900 transition-colors duration-500">
         {/* ABOUT SECTION */}
-        <section id="home" className="sm:flex-row md-flex-row lg:flex py-28  justify-center lg:gap-40" >
+        <motion.section
+          id="home"
+          className="flex flex-col lg:flex-row py-20 justify-center items-center lg:gap-40"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           <Landing />
-        </section>
+        </motion.section>
         {/* SKILL SECTION */}
-        <section id="skills" className="md:p-10 md:py-20">
+        <motion.section
+          id="skills"
+          className="md:p-10 md:py-20"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
           <Skills/>
-        </section>
+        </motion.section>
         {/* ME SECTION */}
-        <section id="about" className="pt-28">
+        <motion.section
+          id="about"
+          className="pt-28"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+        >
           <Me  />
-        </section>
+        </motion.section>
         {/* PORFOLIO SECTION */}
-        <section id="portfolio" className="md:p-10 md:py-20 ">
+        <motion.section
+          id="portfolio"
+          className="md:p-10 md:py-20"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
           <Portfolio2 />
-        </section>
+        </motion.section>
         {/* CONTACT SECTION */}
-        <section id="contact" className="pb-10 pt-20">
+        <motion.section
+          id="contact"
+          className="pb-10 pt-20"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+        >
           <Contact />
-        </section>
+        </motion.section>
         {/* FOOTER SECTION */}
         <section className="bg-white dark:bg-gray-900">
           <Footer/>
         </section>
       </main>
+      <style jsx global>{`
+        body {
+          font-family: 'Inter', 'Poppins', sans-serif;
+          background: #F8F9FA;
+          color: #22223B;
+        }
+        .dark body {
+          background: #22223B;
+          color: #F8F9FA;
+        }
+        h1, h2, h3, h4, h5 {
+          font-family: 'Poppins', 'Montserrat', sans-serif;
+        }
+      `}</style>
     </div>
   );
 }
