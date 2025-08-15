@@ -8,6 +8,7 @@ import Landing from "../components/Landing";
 import Me from "../components/Me";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import AIVisuals from "../components/AIVisuals";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -58,6 +59,16 @@ export default function Home() {
           transition={{ duration: 0.8, delay: 0.3 }}
         >
           <Me  />
+        </motion.section>
+        {/* AI VISUALS SECTION */}
+        <motion.section
+          className="md:p-10 md:py-20"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.35 }}
+        >
+          <AIVisuals />
         </motion.section>
         {/* PORFOLIO SECTION */}
         <motion.section

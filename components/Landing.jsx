@@ -1,79 +1,153 @@
-// Updated Landing.jsx component with new design
+// Completely redesigned Landing.jsx component with modern 2025 trends
 import React from "react";
 import { motion } from "framer-motion";
-import Typewriter from "typewriter-effect";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Landing = () => {
- return (
- <motion.div
- initial={{ opacity:0, scale:0.95 }}
- animate={{ opacity:1, scale:1 }}
- transition={{ duration:0.8, ease: "easeOut" }}
- className="flex flex-col md:flex-row items-center justify-center gap-10 w-full"
- >
- {/* Profile Image */}
- <motion.img
- src="/profile.jpg"
- alt="Luca Stringhetti"
- className="rounded-3xl shadow-xl w-40 h-40 md:w-56 md:h-56 object-cover border-4 border-indigo-500"
- initial={{ y:0 }}
- animate={{ y: [0, -10,0] }}
- transition={{ repeat: Infinity, duration:3, ease: "easeInOut" }}
- />
- {/* Hero Text */}
- <div className="text-center md:text-left max-w-xl">
- <motion.h1
- initial={{ opacity:0, y:30 }}
- animate={{ opacity:1, y:0 }}
- transition={{ duration:0.7, delay:0.2 }}
- className="text-indigo-600 dark:text-indigo-400 mb-4 leading-tight"
- >
- <p className="h3">Hello, I am</p>
- <p className="h2">Luca Stringhetti</p>
- </motion.h1>
- <h3 className="h3 dark:text-white font-bold ">
- <Typewriter
- options={{
- strings: [
- "Front End Developer",
- "Full Stack Developer",
- "Back End Developer",
- ],
- autoStart: true,
- loop: true,
- }}
- />
- </h3>
- <motion.p
- initial={{ opacity:0, y:20 }}
- animate={{ opacity:1, y:0 }}
- transition={{ duration:0.7, delay:0.4 }}
- className="p text-gray-700 dark:text-gray-200 mb-6"
- >
- A driven full-stack developer with a passion for creating intuitive
- and impactful web applications. With a background in customer service
- management, I bring a unique perspective to my work, honing strong
- problem-solving and communication skills. After completing a
- full-stack coding bootcamp, I am eager to apply my technical knowledge
- and drive to real-world projects. My goal is to use my skills to
- create user-centered digital solutions that make a meaningful impact.
- </motion.p>
- {/* Download CV Button */}
- <motion.a
- href="/cv.pdf"
- download
- whileHover={{
- scale:1.05,
- backgroundColor: "#FF6584",
- color: "#fff",
- }}
- className="inline-block px-6 py-3 rounded-full bg-indigo-500 text-white font-semibold shadow-lg transition-all duration-300"
- >
- Download CV
- </motion.a>
- </div>
- </motion.div>
- );
+  return (
+    <div className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        {/* Text Content */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="text-center lg:text-left"
+        >
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="text-5xl md:text-7xl font-bold mb-6"
+          >
+            <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+              Hi, I'm
+            </span>
+            <br />
+            <span className="text-gray-900 dark:text-white">Luca Stringhetti</span>
+          </motion.h1>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.4 }}
+            className="text-2xl md:text-3xl font-semibold mb-8 text-gray-600 dark:text-gray-300"
+          >
+            Full Stack Developer
+          </motion.div>
+          
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.6 }}
+            className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto lg:mx-0"
+          >
+            I create immersive digital experiences with cutting-edge technology. 
+            Passionate about AI-generated visuals and modern web design trends.
+          </motion.p>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.8 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+          >
+            <motion.a
+              href="/cv.pdf"
+              download
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              Download CV
+            </motion.a>
+            
+            <motion.a
+              href="#contact"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 py-4 border-2 border-indigo-600 text-indigo-600 dark:text-indigo-400 font-semibold rounded-full hover:bg-indigo-600 hover:text-white transition-all duration-300"
+            >
+              Get In Touch
+            </motion.a>
+          </motion.div>
+          
+          {/* Social Links */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 1.0 }}
+            className="flex justify-center lg:justify-start gap-6 mt-12"
+          >
+            <motion.a
+              href="https://github.com"
+              whileHover={{ y: -5 }}
+              className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200"
+            >
+              <FaGithub size={32} />
+            </motion.a>
+            <motion.a
+              href="https://linkedin.com"
+              whileHover={{ y: -5 }}
+              className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200"
+            >
+              <FaLinkedin size={32} />
+            </motion.a>
+            <motion.a
+              href="https://twitter.com"
+              whileHover={{ y: -5 }}
+              className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200"
+            >
+              <FaTwitter size={32} />
+            </motion.a>
+          </motion.div>
+        </motion.div>
+        
+        {/* Visual Content */}
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+          className="relative"
+        >
+          <div className="relative w-80 h-80 md:w-96 md:h-96 mx-auto">
+            {/* Background gradient circles */}
+            <div className="absolute inset-0 bg-gradient-to-r from-indigo-400 to-purple-500 rounded-full blur-3xl opacity-30 animate-pulse"></div>
+            <div className="absolute inset-4 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full blur-2xl opacity-20 animate-pulse delay-1000"></div>
+            
+            {/* Profile image container */}
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="relative w-full h-full rounded-full overflow-hidden border-8 border-white dark:border-gray-900 shadow-2xl"
+            >
+              <img
+                src="/profile.jpg"
+                alt="Luca Stringhetti"
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
+            
+            {/* Floating elements */}
+            <motion.div
+              animate={{ y: [0, -20, 0] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold shadow-lg"
+            >
+              AI
+            </motion.div>
+            
+            <motion.div
+              animate={{ y: [0, 15, 0] }}
+              transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+              className="absolute -bottom-4 -left-4 w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white font-bold shadow-lg"
+            >
+              UX
+            </motion.div>
+          </div>
+        </motion.div>
+      </div>
+    </div>
+  );
 };
 
 export default Landing;
