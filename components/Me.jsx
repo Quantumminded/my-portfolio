@@ -16,10 +16,10 @@ const Me = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
-      className="max-w-2xl mx-auto bg-white/90 dark:bg-gray-800/90 rounded-3xl shadow-xl p-8 border-l-8 border-indigo-500 dark:border-indigo-400"
+      className="max-w-screen-xl mx-auto bg-white/90 dark:bg-gray-800/90 rounded-3xl shadow-xl p-8 border-l-8 border-indigo-500 dark:border-indigo-400"
     >
       <div className="w-full md:flex-row lg:flex items-center">
-        <div className="max-w-screen-md mx-auto px-16 py-16 text-center">
+        <div className="max-w-screen-md mx-auto py-16 text-center">
           <motion.div
             variants={staggerContainer}
             initial="hidden"

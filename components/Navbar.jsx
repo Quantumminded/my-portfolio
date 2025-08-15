@@ -1,16 +1,17 @@
+// Updated Navbar.jsx component with new design
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import logo from "../public/Logo.png";
 import Image from "next/image";
-import {
-  FaBars,
-  FaTimes,
-  FaFacebook,
-  FaGithub,
-  FaTwitter,
-  FaLinkedin,
+import { 
+  FaBars, 
+  FaTimes, 
+  FaFacebook, 
+  FaGithub, 
+  FaTwitter, 
+  FaLinkedin, 
 } from "react-icons/fa";
 
 const navLinks = [
@@ -36,11 +37,11 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7 }}
-      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-500
-        ${pageScroll ? "bg-white/90 dark:bg-gray-900/90 shadow-lg" : "bg-white/70 dark:bg-gray-900/80"}
-        backdrop-blur-lg flex items-center justify-between px-6 py-4`}
+      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-500 ${
+        pageScroll ? "bg-white/90 dark:bg-gray-900/90 shadow-lg" : "bg-white/70 dark:bg-gray-900/80"
+      } backdrop-blur-lg flex items-center justify-between px-6 py-4`}
       style={{
-        borderRadius: "0 0 24px 24px",
+        borderRadius: "0 24px 24px",
         fontFamily: "'Poppins', 'Montserrat', sans-serif",
       }}
     >
