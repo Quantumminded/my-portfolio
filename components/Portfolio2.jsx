@@ -20,49 +20,86 @@ const Portfolio2 = () => {
           My Projects
         </motion.h2>
         <p className="text-lg text-gray-600 dark:text-gray-300 mb-10 text-center max-w-2xl">A curated selection of my latest work, built with modern technologies and a passion for great user experiences.</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
           {exploreWorlds.map((project, idx) => (
-            <motion.div
-              key={project.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: idx * 0.1 }}
-              whileHover={{ scale: 1.04, boxShadow: "0 8px 32px rgba(255,101,132,0.15)" }}
-              className="bg-white/90 dark:bg-gray-800/90 rounded-2xl shadow-lg overflow-hidden transition-all duration-300 flex flex-col"
+            <div 
+              key={project.id} 
+              className="group relative h-80 [perspective:1000px]"
             >
-              <div className="relative group">
-                <img src={project.imgUrl} alt={project.title} className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" />
-                <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <a href={project.git} target="_blank" rel="noopener noreferrer" className="bg-gray-900 bg-opacity-80 hover:bg-teal-500 text-white p-2 rounded-full">
-                    <FaGithub size={20} />
-                  </a>
-                  <a href={project.url} target="_blank" rel="noopener noreferrer" className="bg-gray-900 bg-opacity-80 hover:bg-teal-500 text-white p-2 rounded-full">
-                    <FiExternalLink size={20} />
-                  </a>
+              <div className="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                {/* Front Side - Image, Title, and Tech Stack */}
+                <div className="absolute inset-0 [backface-visibility:hidden] rounded-2xl overflow-hidden shadow-lg">
+                  <div className="relative w-full h-full bg-gradient-to-br from-white to-gray-100 dark:from-gray-800 dark:to-gray-900 rounded-2xl flex flex-col border border-gray-200 dark:border-gray-700">
+                    {/* Project image */}
+                    <div className="relative w-full h-3/5 overflow-hidden">
+                      <img 
+                        src={project.imgUrl} 
+                        alt={project.title} 
+                        className="w-full h-full object-cover" 
+                      />
+                    </div>
+                    
+                    {/* Content */}
+                    <div className="flex-1 flex flex-col p-4">
+                      <h3 className="font-bold text-indigo-600 dark:text-indigo-400 text-lg mb-3">
+                        {project.title}
+                      </h3>
+                      
+                      {/* Tech stack icons */}
+                      <div className="mt-auto">
+                        <div className="flex flex-wrap gap-2">
+                          {project.stack.map((tech, idx) => (
+                            <div 
+                              key={idx} 
+                              className="flex flex-col items-center justify-center bg-white dark:bg-gray-700/50 p-2 rounded-lg border border-indigo-200 dark:border-gray-600"
+                              title={tech.name}
+                            >
+                              <img src={tech.imgUrl} alt={tech.name} className="w-6 h-6 object-contain mb-1" />
+                              <span className="text-xs text-gray-700 dark:text-gray-300">{tech.name}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Back Side - Description and Links */}
+                <div className="absolute inset-0 [backface-visibility:hidden] rounded-2xl overflow-hidden shadow-lg [transform:rotateY(180deg)] bg-gradient-to-br from-indigo-50 to-teal-50 dark:from-gray-800 dark:to-gray-900">
+                  <div className="relative w-full h-full rounded-2xl flex flex-col p-5 border border-indigo-200 dark:border-gray-700">
+                    <h3 className="font-bold text-indigo-600 dark:text-indigo-400 text-xl mb-3">
+                      {project.title}
+                    </h3>
+                    
+                    <div className="flex-1 overflow-y-auto pr-2 mb-4">
+                      <p className="text-gray-700 dark:text-gray-300 text-sm">
+                        {project.description}
+                      </p>
+                    </div>
+                    
+                    {/* Action buttons */}
+                    <div className="mt-auto flex gap-3">
+                      <a 
+                        href={project.git} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white p-2 rounded-lg text-sm font-medium transition-colors duration-300 flex-1"
+                      >
+                        <FaGithub size={16} /> GitHub
+                      </a>
+                      <a 
+                        href={project.url} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="flex items-center justify-center gap-2 bg-teal-600 hover:bg-teal-700 text-white p-2 rounded-lg text-sm font-medium transition-colors duration-300 flex-1"
+                      >
+                        <FiExternalLink size={16} /> Live Demo
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="flex-1 flex flex-col p-6">
-                <h3 className="h3 font-bold text-indigo-600 dark:text-indigo-400 mb-2">{project.title}</h3>
-                <p className="p text-gray-700 dark:text-gray-200 mb-4 flex-1">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.stack.map((tech, idx) => (
-                    <span key={idx} className="flex items-center gap-1 bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200 px-2 py-1 rounded text-xs font-medium">
-                      <img src={tech.imgUrl} alt={tech.name} className="w-4 h-4" />
-                      {tech.name}
-                    </span>
-                  ))}
-                </div>
-                <div className="mt-auto flex gap-3">
-                  <a href={project.git} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-gray-600 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400 font-medium text-sm">
-                    <FaGithub /> <span>Code</span>
-                  </a>
-                  <a href={project.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-gray-600 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400 font-medium text-sm">
-                    <FiExternalLink /> <span>Live</span>
-                  </a>
-                </div>
-              </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
