@@ -5,20 +5,31 @@ import { FaGithub } from 'react-icons/fa';
 import { FiExternalLink } from 'react-icons/fi';
 import styles from '../styles';
 import { exploreWorlds } from '../constants/index';
+import { staggerContainer } from '../utils/motion';
+import { TypingText } from './CustomText';
 
 const Portfolio2 = () => {
   return (
     <section className={`${styles.paddings} bg-gradient-to-br from-gray-50 via-white to-teal-50 dark:from-gray-900 dark:via-gray-800 dark:to-teal-900`} id="portfolio">
       <div className="max-w-6xl mx-auto flex flex-col items-center">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="h2 text-indigo-600 dark:text-indigo-400 mb-8 text-center"
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
+          className={`${styles.innerWidth} mx-auto flex flex-col items-center mb-16`}
         >
-          My Projects
-        </motion.h2>
+          <TypingText title="| Projects" textStyles="text-center dark:text-white" />
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+            className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 text-center"
+          >
+            My <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Projects</span>
+          </motion.h2>
+        </motion.div>
         <p className="text-lg text-gray-600 dark:text-gray-300 mb-10 text-center max-w-2xl">A curated selection of my latest work, built with modern technologies and a passion for great user experiences.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
           {exploreWorlds.map((project, idx) => (

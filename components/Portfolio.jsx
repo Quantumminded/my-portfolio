@@ -38,6 +38,10 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/mousewheel';
 
+import { staggerContainer } from "../utils/motion";
+import { TypingText } from "./CustomText";
+import styles from "../styles";
+
 
 const Portfolio = () => {
   const portfolios = [
@@ -79,9 +83,24 @@ const Portfolio = () => {
     <div className="w-full">
       <div className="md:px-10 text-center  ">
         {/* Title & desciption */}
-        <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-600 dark:text-teal-400 font-bold text-center">
-          portfolio
-        </h2>
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
+          className={`${styles.innerWidth} mx-auto flex flex-col items-center mb-16`}
+        >
+          <TypingText title="| Portfolio" textStyles="text-center dark:text-white" />
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+            className="text-5xl md:text-7xl tracking-wider uppercase font-bold text-center mb-6"
+          >
+            <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Portfolio</span>
+          </motion.h2>
+        </motion.div>
         <p className="py-4 mx-auto max-w-lg text-center dark:text-gray-200">
           While only that hauntedtell many purple no lent cushions more heart.
           Soul cushions the still if i, hath lamplight mortals the rapping have

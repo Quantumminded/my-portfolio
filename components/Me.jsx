@@ -20,15 +20,16 @@ const Me = () => {
           viewport={{ once: false, amount: 0.25 }}
           className={`${styles.innerWidth} mx-auto flex flex-col items-center mb-16`}
         >
-          <TypingText
-            title="| About me"
-            textStyles="h3 text-center dark:text-white"
-          />
-          <TitleText
-            className="h2 text-black"
-            title={<>Discover who I am</>}
-            textStyles="text-center"
-          />
+          <TypingText title="| About me" textStyles="text-center dark:text-white" />
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+            className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 text-center"
+          >
+            Discover <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">who I am</span>
+          </motion.h2>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
