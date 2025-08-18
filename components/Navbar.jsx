@@ -98,10 +98,22 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: "100%", opacity: 0 }}
             transition={{ type: "spring", damping: 20, stiffness: 300 }}
-            className="md:hidden fixed inset-y-0 right-0 w-full max-w-sm bg-white dark:bg-gray-900 shadow-2xl z-50"
+            className="md:hidden absolute top-0 right-0 w-full max-w-sm h-screen bg-white dark:bg-gray-900 shadow-2xl z-50 overflow-y-auto"
           >
-            <div className="flex flex-col h-full pt-20 px-4">
-              <div className="flex-1 flex flex-col">
+            <div className="flex flex-col h-full">
+              {/* Close button for mobile menu */}
+              <div className="flex justify-end p-4">
+                <motion.button
+                  whileTap={{ scale: 0.9 }}
+                  onClick={() => setNavigation(false)}
+                  className="p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 focus:outline-none"
+                  aria-label="Close menu"
+                >
+                  <FaTimes size={24} />
+                </motion.button>
+              </div>
+              
+              <div className="flex-1 flex flex-col pt-4 px-4">
                 {navLinks.map((link) => (
                   <motion.a
                     key={link.href}
@@ -115,7 +127,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 ))}
               </div>
               
-              <div className="py-6 border-t border-gray-100 dark:border-gray-800">
+              <div className="py-6 border-t border-gray-100 dark:border-gray-800 mx-auto">
                 <motion.button
                   whileTap={{ scale: 0.95 }}
                   onClick={() => {
