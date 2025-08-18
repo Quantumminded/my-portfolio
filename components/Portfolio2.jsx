@@ -10,14 +10,14 @@ import { TypingText } from './CustomText';
 
 const Portfolio2 = () => {
   return (
-    <section className={`${styles.paddings} bg-gradient-to-br from-gray-50 via-white to-teal-50 dark:from-gray-900 dark:via-gray-800 dark:to-teal-900`} id="portfolio">
+    <section className={`${styles.paddings}`} id="portfolio">
       <div className="max-w-6xl mx-auto flex flex-col items-center">
         <motion.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className={`${styles.innerWidth} mx-auto flex flex-col items-center mb-16`}
+          className={`${styles.innerWidth} mx-auto flex flex-col items-center`}
         >
           <TypingText title="| Projects" textStyles="text-center dark:text-white" />
           <motion.h2

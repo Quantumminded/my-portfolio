@@ -161,7 +161,7 @@ export default function Skills() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className={`${styles.innerWidth} mx-auto flex flex-col items-center mb-16`}
+          className={`${styles.innerWidth} mx-auto flex flex-col items-center`}
         >
           <TypingText title="| Skills" textStyles="text-center dark:text-white" />
           <motion.h2
