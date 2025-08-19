@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BsFillMoonStarsFill, BsSun } from "react-icons/bs";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Image from "next/image";
 
 const navLinks = [
   { href: "#home", label: "Home" },
@@ -39,11 +40,18 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="flex-shrink-0 font-bold text-2xl bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent"
-          >
-            Luca S.
+          <motion.div whileHover={{ scale: 1.03 }} className="flex-shrink-0">
+            <Link href="#home" aria-label="Home" className="group">
+              <span className="relative inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white dark:bg-gray-900 overflow-hidden">
+                <Image
+                  src="/brand-logo.svg"
+                  alt="Luca Stringhetti logo"
+                  width={44}
+                  height={44}
+                  priority
+                />
+              </span>
+            </Link>
           </motion.div>
 
           {/* Desktop Navigation */}
