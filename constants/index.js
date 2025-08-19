@@ -13,7 +13,7 @@ export const exploreWorlds = [
         { name: 'PostgreSQL', imgUrl: '/postgre.png' },
         ],
       git: "https://github.com/Quantumminded/front-end",
-      description: "The final project for my coding bootcamp involved the development of a platform that enables individuals to search and connect with translators for various tasks, including calls and document translations. The platform features a fully-functional web application with robust user authentication and authorization capabilities. Utilizing cutting-edge technologies such as Tailwind and Knex.js for database management, and a custom-built backend, we have created a seamless user experience. Additionally, we have integrated Stripe for secure and seamless payment processing, allowing users to both post requests for translation services or offer their own services to others."
+      description: "Marketplace to find and hire translators for calls and document work. Full‑stack app with auth, custom Node backend, Tailwind UI, PostgreSQL/Knex, and Stripe payments."
     },
     {
       id: '2',
@@ -27,7 +27,7 @@ export const exploreWorlds = [
         { name: 'Tailwind', imgUrl: '/tailwind.png' },
         ],
       git: "https://github.com/AdaN6/PokeFight_frontend",
-      description: "This dynamic and interactive website showcasing the world of Pokemon was built using NodeJS API and ExpressJS for the back-end, and React and Tailwind for the front-end. The site serves as a comprehensive resource for all things Pokemon, featuring a rich and detailed database of information on each of the beloved creatures. With a visually appealing and user-friendly interface, users can easily browse through the collection of Pokemon, viewing detailed information on their stats, abilities, and more. The information is dynamically fetched from the API, ensuring that users have access to the most up-to-date and accurate information available.",
+      description: "Pokédex built with React + Tailwind and a Node/Express API. Browse Pokémon with up‑to‑date stats and abilities, with fast search and filters.",
     },
     {
       id: '3',
@@ -40,7 +40,7 @@ export const exploreWorlds = [
         { name: 'CSS', imgUrl: '/css.png' },
         ],
       git: "https://github.com/Quantumminded/To-do-list",
-      description: "This dynamic and interactive website showcasing the world of Pokemon was built using NodeJS API and ExpressJS for the back-end, and React and Tailwind for the front-end. The site serves as a comprehensive resource for all things Pokemon, featuring a rich and detailed database of information on each of the beloved creatures. With a visually appealing and user-friendly interface, users can easily browse through the collection of Pokemon, viewing detailed information on their stats, abilities, and more. The information is dynamically fetched from the API, ensuring that users have access to the most up-to-date and accurate information available.",
+      description: "Lightweight to‑do app in vanilla JS (HTML/CSS/JS). Add, complete, and delete tasks with localStorage persistence.",
     },
     {
       id: '4',
@@ -56,7 +56,7 @@ export const exploreWorlds = [
         { name: 'Golang', imgUrl: '/golang.png' },
       ],
       git: "https://github.com/Valpiccola",
-      description: "The vision of Valpiccola is to become the leading technology platform for Italian territories that want to take advantage of the opportunities offered by the digital world. The products developed include interactive maps, automatic translation systems, state-of-the-art SEO, and indexing on major search engines. The back-end release on Sanity for content management, Supabase for identity and event management, and an API engine built with Golang. The front-end was built using JavaScript, Svelte, and Tailwind.",
+      description: "Digital platform for Italian territories: interactive maps, automatic translation, and SEO tools. Sanity CMS + Supabase with a Go API; Svelte + Tailwind frontend.",
     },
     {
       id: '5',
@@ -70,7 +70,7 @@ export const exploreWorlds = [
         { name: 'React', imgUrl: '/react.png' },
         ],
       git: "https://github.com/Quantumminded/Hacker-news",
-      description: "I developed a Hacker News reader that fetches news articles directly from the HN API. My focus was to display all the articles about a specific topic. The site was built using functional components and hooks in React, allowing for a seamless user experience. The news articles are fetched from the API and displayed on the site, with the ability to search for any topic of interest through the search bar. This project showcases my skills in API integration, React and its hooks, as well as my understanding of UI/UX design.",
+      description: "React reader for the Hacker News API. Search topics and browse stories fast using hooks and client‑side fetching.",
     },
     {
       id: '6',
@@ -84,7 +84,7 @@ export const exploreWorlds = [
         { name: 'React', imgUrl: '/react.png' },
         ],
       git: "https://github.com/Quantumminded/WeatherApp-React",
-      description: "This project is a simple weather app built using React and the OpenWeatherMap API. The user can enter a city name in the search bar and get the current weather conditions for that city. The app displays the temperature in Celsius, along with a brief description of the weather. The background color of the app changes based on the temperature, with warmer temperatures resulting in a warmer color scheme. The app also displays the current date and time, along with the name of the city and country for the weather conditions.",
+      description: "React weather app using OpenWeatherMap. Search any city to see current conditions and temperature, with a UI that adapts to the weather.",
     },
     {
       id: '7',
@@ -98,7 +98,7 @@ export const exploreWorlds = [
         { name: 'React', imgUrl: '/react.png' },
         ],
       git: "https://github.com/Quantumminded/Expense-tracker",
-      description: "This project is a simple expense tracker built using React and hooks such as useState, useContext, and useReducer, along with the Context API. The user can add and remove expenses, along with setting a budget and tracking their remaining budget. The app displays a list of expenses, including their description, amount, and date. The user can also filter expenses by date or search for specific expenses. The app provides a clear and easy-to-use interface for managing expenses, helping users stay on top of their finances.",
+      description: "React expense tracker using Context and useReducer. Add/remove transactions, set a budget, and filter to stay on top of spending.",
     },
 
   ];
