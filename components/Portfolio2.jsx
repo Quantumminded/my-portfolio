@@ -38,91 +38,98 @@ const Portfolio2 = () => {
               className="group relative h-80 [perspective:1000px]"
             >
               <div className="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                {/* Front Side - Image, Title, and Tech Stack */}
+                {/* Front Side - Minimal, image-first with glass overlay */}
                 <div className="absolute inset-0 [backface-visibility:hidden] rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl">
-                  <div className="relative w-full h-full bg-gradient-to-br from-white to-gray-100 dark:from-gray-800 dark:to-gray-900 rounded-2xl flex flex-col border border-indigo-100 dark:border-gray-600">
-                    {/* Project image */}
-                    <div className="relative w-full h-48 overflow-hidden">
+                  <div className="relative h-full w-full rounded-2xl p-[1px] bg-gradient-to-br from-indigo-500/40 via-purple-500/30 to-teal-500/40">
+                    <div className="relative h-full w-full rounded-2xl overflow-hidden bg-white/70 dark:bg-gray-900/50 backdrop-blur-md">
                       <img
                         src={project.imgUrl}
                         alt={project.title}
-                        className="w-full h-full object-cover object-center"
+                        className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
                       />
-                    </div>
-                    
-                    {/* Content */}
-                    <div className="flex-1 flex flex-col p-4">
-                      <h3 className="font-bold text-indigo-600 dark:text-indigo-400 text-lg mb-3">
-                        {project.title}
-                      </h3>
-                      
-                      {/* Tech stack icons */}
-                      <div className="mt-auto">
-                        <div className="flex flex-wrap gap-1">
-                          {project.stack.map((tech, idx) => (
-                            <div
-                              key={idx}
-                              className="flex flex-col items-center justify-center bg-white dark:bg-gray-700/50 p-1 rounded border border-indigo-200 dark:border-gray-600"
-                              title={tech.name}
-                            >
-                              <img
-                                src={tech.imgUrl}
-                                alt={tech.name}
-                                className="w-4 h-4 object-contain transition-transform duration-300 hover:scale-125"
-                              />
-                            </div>
-                          ))}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent dark:from-black/60" />
+                      <div className="absolute top-3 right-3">
+                        <span className="inline-flex items-center rounded-full px-2 py-1 text-[10px] font-medium bg-white/70 dark:bg-gray-800/70 text-gray-700 dark:text-gray-200 ring-1 ring-black/10 dark:ring-white/10 backdrop-blur-sm">
+                          Project #{idx + 1}
+                        </span>
+                      </div>
+                      <div className="absolute bottom-0 left-0 right-0 p-4">
+                        <div className="flex flex-col gap-2">
+                          <h3 className="text-white text-lg md:text-xl font-semibold drop-shadow-sm">
+                            {project.title}
+                          </h3>
+                          <div className="flex items-center gap-2">
+                            {project.stack.slice(0, 3).map((tech, techIdx) => (
+                              <span
+                                key={techIdx}
+                                title={tech.name}
+                                className="inline-flex items-center gap-1 rounded-full bg-white/80 dark:bg-gray-800/80 px-2 py-1 text-[10px] text-gray-700 dark:text-gray-200 ring-1 ring-black/10 dark:ring-white/10 backdrop-blur-sm"
+                              >
+                                <img src={tech.imgUrl} alt={tech.name} className="w-3.5 h-3.5 object-contain" />
+                                {tech.name}
+                              </span>
+                            ))}
+                            {project.stack.length > 3 && (
+                              <span className="inline-flex items-center rounded-full bg-white/70 dark:bg-gray-800/70 px-2 py-1 text-[10px] text-gray-700 dark:text-gray-200 ring-1 ring-black/10 dark:ring-white/10 backdrop-blur-sm">
+                                +{project.stack.length - 3}
+                              </span>
+                            )}
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                
-                {/* Back Side - Description and Links */}
-                <div className="absolute inset-0 [backface-visibility:hidden] rounded-2xl overflow-hidden shadow-lg [transform:rotateY(180deg)] bg-gradient-to-br from-indigo-50 to-teal-50 dark:from-gray-800 dark:to-gray-900 transition-all duration-300 hover:shadow-xl">
-                  <div className="relative w-full h-full rounded-2xl flex flex-col p-5 border border-indigo-200 dark:border-gray-700">
-                    {/* Tech stack icons on back */}
-                    <div className="flex flex-wrap gap-1 mb-3">
-                      {project.stack.map((tech, idx) => (
-                        <div
-                          key={idx}
-                          className="flex flex-col items-center justify-center bg-white dark:bg-gray-700/50 p-1 rounded border border-indigo-200 dark:border-gray-600"
-                          title={tech.name}
-                        >
-                          <img
-                            src={tech.imgUrl}
-                            alt={tech.name}
-                            className="w-4 h-4 object-contain"
-                          />
+
+                {/* Back Side - Focused text and primary actions */}
+                <div className="absolute inset-0 [backface-visibility:hidden] rounded-2xl overflow-hidden shadow-lg [transform:rotateY(180deg)] transition-all duration-300 hover:shadow-xl">
+                  <div className="relative h-full w-full rounded-2xl p-[1px] bg-gradient-to-br from-indigo-500/40 via-purple-500/30 to-teal-500/40">
+                    <div className="relative h-full w-full rounded-2xl bg-white/85 dark:bg-gray-900/70 backdrop-blur-md flex flex-col">
+                      <div className="p-5 pb-3">
+                        <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                          {project.title}
+                        </h3>
+                        <div className="mt-2 flex flex-wrap gap-2">
+                          {project.stack.slice(0, 5).map((tech, techIdx) => (
+                            <span
+                              key={techIdx}
+                              title={tech.name}
+                              className="inline-flex items-center gap-1 rounded-full bg-gray-100/80 dark:bg-gray-800/70 px-2 py-1 text-[10px] text-gray-700 dark:text-gray-200 ring-1 ring-black/10 dark:ring-white/10"
+                            >
+                              <img src={tech.imgUrl} alt={tech.name} className="w-3.5 h-3.5 object-contain" />
+                              {tech.name}
+                            </span>
+                          ))}
+                          {project.stack.length > 5 && (
+                            <span className="inline-flex items-center rounded-full bg-gray-100/80 dark:bg-gray-800/70 px-2 py-1 text-[10px] text-gray-700 dark:text-gray-200 ring-1 ring-black/10 dark:ring-white/10">
+                              +{project.stack.length - 5}
+                            </span>
+                          )}
                         </div>
-                      ))}
-                    </div>
-                    <h3 className="font-bold text-indigo-600 dark:text-indigo-400 text-xl mb-3">
-                      {project.title}
-                    </h3>
-                    
-                    <div className="flex-1 overflow-y-auto pr-2 mb-4 text-gray-700 dark:text-gray-300 text-sm">
-                      <p>{project.description}</p>
-                    </div>
-                    
-                    {/* Action buttons */}
-                    <div className="mt-auto flex gap-3">
-                      <a 
-                        href={project.git} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white p-2 rounded-lg text-sm font-medium transition-all duration-300 flex-1 hover:scale-[1.03]"
-                      >
-                        <FaGithub size={16} /> GitHub
-                      </a>
-                      <a 
-                        href={project.url} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="flex items-center justify-center gap-2 bg-teal-600 hover:bg-teal-700 text-white p-2 rounded-lg text-sm font-medium transition-all duration-300 flex-1 hover:scale-[1.03]"
-                      >
-                        <FiExternalLink size={16} /> Live Demo
-                      </a>
+                      </div>
+                      <div className="px-5 flex-1 overflow-y-auto text-gray-700 dark:text-gray-300">
+                        <p className="text-sm leading-relaxed">
+                          {project.description}
+                        </p>
+                      </div>
+                      <div className="p-5 pt-3 mt-auto grid grid-cols-2 gap-3">
+                        <a
+                          href={project.git}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center gap-2 rounded-xl px-3 py-2 text-sm font-medium text-white bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 transition-colors duration-200 shadow-sm"
+                        >
+                          <FaGithub size={16} /> GitHub
+                        </a>
+                        <a
+                          href={project.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center gap-2 rounded-xl px-3 py-2 text-sm font-medium text-white bg-teal-600 hover:bg-teal-700 transition-colors duration-200 shadow-sm"
+                        >
+                          <FiExternalLink size={16} /> Live Demo
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
