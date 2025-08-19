@@ -61,7 +61,7 @@ export default function Home() {
           <Me  />
         </motion.section>
         {/* AI VISUALS SECTION */}
-        <motion.section
+        {/* <motion.section
           className="md:p-10 md:py-20"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -69,7 +69,7 @@ export default function Home() {
           transition={{ duration: 0.8, delay: 0.35 }}
         >
           <AIVisuals />
-        </motion.section>
+        </motion.section> */}
         {/* PORFOLIO SECTION */}
         <motion.section
           id="portfolio"

@@ -202,7 +202,7 @@ export default function Skills() {
         </div>
 
         {/* AI Skills Section */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -262,7 +262,7 @@ export default function Skills() {
               </motion.div>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   );
