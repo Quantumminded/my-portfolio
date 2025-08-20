@@ -55,3 +55,8 @@ a, .a {
   @apply text-base sm:text-lg md:text-xl transition-colors duration-200;
 }
 
+/* Consistent vertical spacing for top-level sections */
+.section-spacing {
+  @apply py-16 sm:py-20 md:py-24;
+}
+

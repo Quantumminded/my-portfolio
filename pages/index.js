@@ -31,7 +31,7 @@ export default function Home() {
         {/* ABOUT SECTION */}
         <motion.section
           id="home"
-          className="flex flex-col lg:flex-row py-20 justify-center items-center lg:gap-40"
+          className="section-spacing flex flex-col lg:flex-row justify-center items-center lg:gap-40"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -41,7 +41,7 @@ export default function Home() {
         {/* SKILL SECTION */}
         <motion.section
           id="skills"
-          className="md:p-10 md:py-20"
+          className="section-spacing"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -52,7 +52,7 @@ export default function Home() {
         {/* ME SECTION */}
         <motion.section
           id="about"
-          className="pt-28"
+          className="section-spacing"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -73,7 +73,7 @@ export default function Home() {
         {/* PORFOLIO SECTION */}
         <motion.section
           id="portfolio"
-          className="md:p-10 md:py-20"
+          className="section-spacing"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -84,7 +84,7 @@ export default function Home() {
         {/* CONTACT SECTION */}
         <motion.section
           id="contact"
-          className="pb-10 pt-20"
+          className="section-spacing"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
