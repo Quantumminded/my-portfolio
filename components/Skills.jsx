@@ -194,7 +194,7 @@ export default function Skills() {
 
         {/* Skills Showcase */}
         <div className="overflow-hidden">
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 sm:gap-6 mt-4">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 sm:gap-6 mt-4 mb-1">
             {filteredSkills.map((skill, index) => (
               <SkillCard key={skill.id} skill={skill} index={index} />
             ))}
