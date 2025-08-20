@@ -110,7 +110,7 @@ const Landing = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
           className="relative"
         >
-          <div className="relative w-80 h-80 md:w-96 md:h-96 mx-auto">
+          <div className="relative mx-auto w-full max-w-[82vw] sm:max-w-[420px] md:w-96 md:h-96 aspect-square">
             {/* Background gradient circles */}
             <div className="absolute inset-0 bg-gradient-to-r from-indigo-400 to-purple-500 rounded-full blur-3xl opacity-30 animate-pulse"></div>
             <div className="absolute inset-4 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full blur-2xl opacity-20 animate-pulse delay-1000"></div>
@@ -131,7 +131,7 @@ const Landing = () => {
             <motion.div
               animate={{ y: [0, -20, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold shadow-lg"
+              className="absolute top-2 right-2 sm:-top-4 sm:-right-4 w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold shadow-lg"
             >
               AI
             </motion.div>
@@ -139,7 +139,7 @@ const Landing = () => {
             <motion.div
               animate={{ y: [0, 15, 0] }}
               transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-              className="absolute -bottom-4 -left-4 w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white font-bold shadow-lg"
+              className="absolute bottom-2 left-2 sm:-bottom-4 sm:-left-4 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white font-bold shadow-lg"
             >
               UX
             </motion.div>
