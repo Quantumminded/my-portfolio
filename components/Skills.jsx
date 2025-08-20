@@ -112,10 +112,10 @@ const SkillCard = ({ skill, index }) => {
       <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-2xl blur opacity-0 group-hover:opacity-20 transition-all duration-500"></div>
       
       {/* Card */}
-      <div className="relative bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 group-hover:border-indigo-300 dark:group-hover:border-indigo-500 transition-all duration-300 h-full flex flex-col items-center justify-center text-center">
+      <div className="relative bg-white dark:bg-gray-800 rounded-2xl p-4 sm:p-6 shadow-lg border border-gray-100 dark:border-gray-700 group-hover:border-indigo-300 dark:group-hover:border-indigo-500 transition-all duration-300 h-full flex flex-col items-center justify-center text-center">
         {/* Icon container */}
-        <div className="mb-4 relative">
-          <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/30 dark:to-purple-900/30 flex items-center justify-center p-3 group-hover:rotate-6 transition-transform duration-300">
+        <div className="mb-3 sm:mb-4 relative">
+          <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/30 dark:to-purple-900/30 flex items-center justify-center p-2.5 sm:p-3 group-hover:rotate-6 transition-transform duration-300">
             <Image
               src={skill.src}
               width={48}
@@ -127,13 +127,13 @@ const SkillCard = ({ skill, index }) => {
         </div>
         
         {/* Skill Name */}
-        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-200 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-300 mb-2">
+        <h3 className="text-base sm:text-lg font-bold text-gray-800 dark:text-gray-200 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-300 mb-2">
           {skill.name}
         </h3>
         
         {/* Category badge */}
         <div className="mt-auto">
-          <span className="inline-block px-3 py-1 text-xs font-semibold text-indigo-600 dark:text-indigo-400 bg-indigo-100 dark:bg-indigo-900/30 rounded-full">
+          <span className="inline-block px-2.5 py-0.5 text-[10px] sm:text-xs font-semibold text-indigo-600 dark:text-indigo-400 bg-indigo-100 dark:bg-indigo-900/30 rounded-full">
             {skill.category}
           </span>
         </div>
@@ -194,7 +194,7 @@ export default function Skills() {
 
         {/* Skills Showcase */}
         <div className="overflow-hidden">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6 mt-4">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 sm:gap-6 mt-4">
             {filteredSkills.map((skill, index) => (
               <SkillCard key={skill.id} skill={skill} index={index} />
             ))}
