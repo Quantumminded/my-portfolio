@@ -63,21 +63,7 @@ const Contact = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="mb-12 grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
-                    <div class="flex items-start">
-                      <div class="shrink-0">
-                        <div class="p-4 dark:bg-teal-400 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
-                          <div>
-                            <FaPhone size={25} />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="grow ml-6">
-                        <p class="font-bold pt-3">Phone</p>
-                        <p class="text-gray-500">+4915731487217</p>
-                      </div>
-                    </div>
-                  </div>
+                  {/* Phone section removed as requested */}
 
                   <div class="mb-12 md:mb-0 grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
                     <div class="flex align-start">

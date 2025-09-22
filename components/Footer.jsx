@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 
 export default function Footer() {
@@ -28,14 +28,6 @@ export default function Footer() {
                  className="bg-indigo-700 hover:bg-indigo-600 p-2 rounded-full transition-colors duration-300">
                 <FaLinkedinIn className="text-xl" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" 
-                 className="bg-indigo-700 hover:bg-indigo-600 p-2 rounded-full transition-colors duration-300">
-                <FaTwitter className="text-xl" />
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" 
-                 className="bg-indigo-700 hover:bg-indigo-600 p-2 rounded-full transition-colors duration-300">
-                <FaInstagram className="text-xl" />
-              </a>
             </div>
           </div>
 
@@ -43,11 +35,11 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-1">
             <h4 className="text-lg font-semibold mb-4">Navigation</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Home</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">About</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Projects</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Skills</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+              <li><a href="#home" className="text-gray-300 hover:text-white transition-colors">Home</a></li>
+              <li><a href="#about" className="text-gray-300 hover:text-white transition-colors">About</a></li>
+              <li><a href="#portfolio" className="text-gray-300 hover:text-white transition-colors">Projects</a></li>
+              <li><a href="#skills" className="text-gray-300 hover:text-white transition-colors">Skills</a></li>
+              <li><a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
 
@@ -56,7 +48,7 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2">
               <li className="flex items-center gap-2 text-gray-300">
-                <FiMail /> contact@lucastringhetti.com
+                <FiMail /> lukkino31@gmail.com
               </li>
               <li className="text-gray-300">Berlin, Germany</li>
             </ul>

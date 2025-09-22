@@ -1,7 +1,7 @@
 // Completely redesigned Landing.jsx component with modern 2025 trends
 import React from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Landing = () => {
   return (
@@ -42,8 +42,8 @@ const Landing = () => {
             transition={{ duration: 0.7, delay: 0.6 }}
             className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto lg:mx-0"
           >
-            I create immersive digital experiences with cutting-edge technology. 
-            Passionate about AI-generated visuals and modern web design trends.
+            I craft modern, user-centered web applications with clean code and scalable architecture.
+            Passionate about AI-powered visuals, intuitive design, and emerging web trends, I enjoy turning ideas into immersive digital experiences that balance creativity and functionality.
           </motion.p>
           
           <motion.div
@@ -53,13 +53,13 @@ const Landing = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
           >
             <motion.a
-              href="/cv.pdf"
-              download
+              href="/resume.pdf"
+              target="_blank"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              Download CV
+              Download Resume
             </motion.a>
             
             <motion.a
@@ -80,25 +80,20 @@ const Landing = () => {
             className="flex justify-center lg:justify-start gap-6 mt-12"
           >
             <motion.a
-              href="https://github.com"
+              href="https://github.com/Quantumminded"
               whileHover={{ y: -5 }}
               className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200"
+              target="_blank" rel="noopener noreferrer"
             >
               <FaGithub size={32} />
             </motion.a>
             <motion.a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/lucastringhetti/"
               whileHover={{ y: -5 }}
               className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200"
+              target="_blank" rel="noopener noreferrer"
             >
               <FaLinkedin size={32} />
-            </motion.a>
-            <motion.a
-              href="https://twitter.com"
-              whileHover={{ y: -5 }}
-              className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200"
-            >
-              <FaTwitter size={32} />
             </motion.a>
           </motion.div>
         </motion.div>
@@ -121,7 +116,7 @@ const Landing = () => {
               className="relative w-full h-full rounded-full overflow-hidden border-8 border-white dark:border-gray-900 shadow-2xl"
             >
               <img
-                src="/profile.jpg"
+                src="/dev-ed-wave.png"
                 alt="Luca Stringhetti"
                 className="w-full h-full object-cover"
               />

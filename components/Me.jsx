@@ -92,15 +92,15 @@ const Me = () => {
                 transition={{ duration: 0.7, delay: 0.3 }}
                 className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed"
               >
-                As a full-stack developer, I am enthusiastic and motivated, driven
-                by a deep passion for creating web applications that are both
-                intuitive and impactful. My background in customer service
-                management has provided me with valuable experience in
-                problem-solving and communication, skills that I bring to my work as
-                a developer.
+                I’m a junior full-stack developer with almost 2 years of hands-on experience building web applications that balance clean code, usability, and performance.
+My journey started with a background in customer service and team collaboration, where I developed strong communication and problem-solving skills—abilities I now bring into tech to build solutions that are not only functional, but also user-focused and impactful.
+
+Over the past years, I’ve worked on projects ranging from front-end interfaces with Vue.js to RESTful APIs and database integrations, gaining confidence across the stack. I also enjoy exploring new tools and best practices to constantly sharpen my craft and stay adaptable in a fast-moving field.
+
+My goal is to contribute to products that matter—solutions that help people, empower businesses, and make the web a better place to be.
               </motion.p>
               
-              <motion.p
+              {/* <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -113,9 +113,9 @@ const Me = () => {
                 expectations of the users. I recently completed a rigorous full-stack 
                 coding bootcamp, where I gained hands-on experience with a diverse 
                 set of technologies.
-              </motion.p>
+              </motion.p> */}
               
-              <motion.p
+              {/* <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -128,7 +128,7 @@ const Me = () => {
                 leveraging my ability to deliver impactful and user-centered digital
                 solutions. My ultimate goal is to make a meaningful impact by
                 creating digital solutions that enhance people's lives.
-              </motion.p>
+              </motion.p> */}
             </div>
 
             {/* Stats Section */}
@@ -140,15 +140,15 @@ const Me = () => {
               className="grid grid-cols-3 gap-6 py-8"
             >
               <div className="text-center">
-                <div className="text-3xl font-bold text-indigo-600 dark:text-indigo-400">50+</div>
+                <div className="text-3xl font-bold text-indigo-600 dark:text-indigo-400">7+</div>
                 <div className="text-gray-600 dark:text-gray-300">Projects</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-indigo-600 dark:text-indigo-400">3+</div>
+                <div className="text-3xl font-bold text-indigo-600 dark:text-indigo-400">2+</div>
                 <div className="text-gray-600 dark:text-gray-300">Years</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-indigo-600 dark:text-indigo-400">15+</div>
+                <div className="text-3xl font-bold text-indigo-600 dark:text-indigo-400">12+</div>
                 <div className="text-gray-600 dark:text-gray-300">Technologies</div>
               </div>
             </motion.div>

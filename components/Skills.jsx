@@ -15,6 +15,9 @@ import express from "../public/assets/experience/express.png";
 import mongo from "../public/assets/experience/mongo.png";
 import postgre from "../public/assets/experience/postgre.png";
 import svelte from "../public/assets/experience/svelte.png";
+import angular from "../public/assets/experience/angular.png";
+import vue from "../public/assets/experience/vue.png";
+import php from "../public/assets/experience/php.png";
 
 import { TypingText, TitleText } from "./CustomText";
 import styles from "../styles";
@@ -80,6 +83,24 @@ const skills = [
     name: "Svelte",
     src: svelte,
     category: "Frontend"
+  },
+  {
+    id: 13,
+    name: "Angular",
+    src: angular,
+    category: "Frontend"
+  },
+  {
+    id: 14,
+    name: "Vue",
+    src: vue,
+    category: "Frontend"
+  },
+  {
+    id: 15,
+    name: "PHP",
+    src: php,
+    category: "Backend"
   },
   {
     id: 11,
