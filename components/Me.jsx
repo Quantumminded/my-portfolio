@@ -1,9 +1,5 @@
-import Link from "next/link";
 import React from "react";
-import me from "../public/me.png";
-import Image from "next/image";
-import { TypingText, TitleText } from "./CustomText";
-import styles from "../styles";
+import { TypingText } from "./CustomText";
 import { motion } from "framer-motion";
 import { staggerContainer } from "../utils/motion";
 
@@ -11,216 +7,91 @@ import { MdExpandMore } from "react-icons/md";
 
 const Me = () => {
   return (
-    <div className="w-full">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="w-full py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
+      <div className="max-w-5xl mx-auto px-6">
         <motion.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.25 }}
-          className={`${styles.innerWidth} mx-auto flex flex-col items-center mb-16`}
+          viewport={{ once: true, amount: 0.3 }}
+          className="text-center space-y-4 mb-16"
         >
           <TypingText title="| About me" textStyles="text-center dark:text-white" />
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.7, delay: 0.1 }}
-            className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 text-center"
+            transition={{ duration: 0.6 }}
+            className="text-4xl md:text-5xl font-semibold text-gray-900 dark:text-white"
           >
-            Discover <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">who I am</span>
+            Discover{" "}
+            <span className="bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">
+              who I am
+            </span>
           </motion.h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Image Section */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="relative"
-          >
-            <div className="relative w-full max-w-lg mx-auto">
-              {/* Background gradient circles */}
-              <div className="absolute -inset-4 bg-gradient-to-r from-indigo-400 to-purple-500 rounded-3xl blur-2xl opacity-20"></div>
-              <div className="absolute -inset-8 bg-gradient-to-r from-purple-400 to-pink-500 rounded-3xl blur-3xl opacity-10"></div>
-              
-              {/* Profile image container */}
-              <div className="relative bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-2xl border-8 border-white dark:border-gray-800">
-                <Image
-                  src={me}
-                  alt="Luca Stringhetti"
-                  className="w-full h-auto object-cover"
-                  width={500}
-                  height={600}
-                />
-              </div>
-              
-              {/* Floating badges */}
-              <motion.div
-                animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -top-6 -right-6 bg-gradient-to-r from-indigo-500 to-purple-500 text-white px-4 py-2 rounded-full font-semibold shadow-lg"
-              >
-                Full Stack
-              </motion.div>
-              
-              <motion.div
-                animate={{ y: [0, 10, 0] }}
-                transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-                className="absolute -bottom-6 -left-6 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full font-semibold shadow-lg"
-              >
-                AI Enthusiast
-              </motion.div>
-            </div>
-          </motion.div>
-
-          {/* Text Content */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="space-y-8"
-          >
-            <div className="space-y-6">
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.7, delay: 0.3 }}
-                className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed"
-              >
+        <motion.div
+          initial={{ opacity: 0, scale: 0.96 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="relative overflow-hidden rounded-3xl border border-gray-100/80 dark:border-white/10 bg-white dark:bg-gray-900 shadow-xl"
+        >
+          <div className="px-8 py-12 md:px-16 flex flex-col items-center gap-10">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="space-y-8 text-center max-w-3xl"
+            >
+              <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                 I’m a junior full-stack developer with almost 2 years of hands-on experience building web applications that balance clean code, usability, and performance.
 My journey started with a background in customer service and team collaboration, where I developed strong communication and problem-solving skills—abilities I now bring into tech to build solutions that are not only functional, but also user-focused and impactful.
 
 Over the past years, I’ve worked on projects ranging from front-end interfaces with Vue.js to RESTful APIs and database integrations, gaining confidence across the stack. I also enjoy exploring new tools and best practices to constantly sharpen my craft and stay adaptable in a fast-moving field.
 
 My goal is to contribute to products that matter—solutions that help people, empower businesses, and make the web a better place to be.
-              </motion.p>
-              
-              {/* <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.7, delay: 0.4 }}
-                className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed"
-              >
-                This unique combination allows me to approach projects
-                with a user-centered mindset, ensuring that the solutions I create
-                are not only technically sound but also meet the needs and
-                expectations of the users. I recently completed a rigorous full-stack 
-                coding bootcamp, where I gained hands-on experience with a diverse 
-                set of technologies.
-              </motion.p> */}
-              
-              {/* <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.7, delay: 0.5 }}
-                className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed"
-              >
-                These experiences have equipped me with the technical knowledge and
-                real-world experience necessary to excel as a full-stack developer.
-                I am eager to put my skills and drive to use on real-world projects,
-                leveraging my ability to deliver impactful and user-centered digital
-                solutions. My ultimate goal is to make a meaningful impact by
-                creating digital solutions that enhance people's lives.
-              </motion.p> */}
-            </div>
+              </p>
 
-            {/* Stats Section */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: 0.6 }}
-              className="grid grid-cols-3 gap-6 py-8"
-            >
-              <div className="text-center">
-                <div className="text-3xl font-bold text-indigo-600 dark:text-indigo-400">7+</div>
-                <div className="text-gray-600 dark:text-gray-300">Projects</div>
+              <div className="flex flex-wrap items-center justify-center gap-6 text-left">
+                {[
+                  { label: "Projects", value: "7+" },
+                  { label: "Years", value: "2+" },
+                  { label: "Technologies", value: "12+" },
+                ].map((item) => (
+                  <div
+                    key={item.label}
+                    className="min-w-[120px] rounded-2xl border border-gray-200/70 dark:border-white/10 bg-white dark:bg-gray-800/70 px-6 py-4 text-center shadow-sm"
+                  >
+                    <div className="text-2xl font-semibold text-gray-900 dark:text-white">
+                      {item.value}
+                    </div>
+                    <div className="text-sm uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                      {item.label}
+                    </div>
+                  </div>
+                ))}
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-indigo-600 dark:text-indigo-400">2+</div>
-                <div className="text-gray-600 dark:text-gray-300">Years</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-indigo-600 dark:text-indigo-400">12+</div>
-                <div className="text-gray-600 dark:text-gray-300">Technologies</div>
+
+              <div className="flex justify-center">
+                <a
+                  href="/resume.pdf"
+                  target="_blank"
+                  className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white dark:from-indigo-500 dark:to-purple-500 px-8 py-3 text-sm font-semibold tracking-wide transition duration-300 hover:-translate-y-0.5"
+                >
+                  Download Resume
+                  <span className="ml-1 -rotate-90 transition duration-300 group-hover:rotate-0">
+                    <MdExpandMore size={22} />
+                  </span>
+                </a>
               </div>
             </motion.div>
-
-            {/* Resume Button */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: 0.7 }}
-              className="flex items-center justify-center lg:justify-start"
-            >
-              <a 
-                href="/resume.pdf" 
-                target="_blank"
-                className="group flex items-center justify-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 font-bold uppercase rounded-full tracking-wider cursor-pointer shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-              >
-                Download Resume
-                <span className="ml-2 -rotate-90 duration-300 ease-in group-hover:rotate-0">
-                  <MdExpandMore size={25} />
-                </span>
-              </a>
-            </motion.div>
-          </motion.div>
-        </div>
-
-        {/* AI Integration Section */}
-        {/* <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="mt-20 p-8 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 dark:from-indigo-700/20 dark:to-purple-700/20 rounded-3xl backdrop-blur-lg border border-indigo-200 dark:border-indigo-800/50"
-        >
-          <div className="text-center">
-            <h3 className="text-3xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">
-              AI-Driven Development Approach
-            </h3>
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-              Integrating cutting-edge AI tools and methodologies to enhance development 
-              processes and create innovative solutions that push the boundaries of what's possible.
-            </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg rounded-xl p-6 shadow-lg"
-              >
-                <div className="text-4xl mb-4">🤖</div>
-                <h4 className="text-xl font-semibold mb-2">AI-Assisted Coding</h4>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Leveraging AI to accelerate development, improve code quality, 
-                  and solve complex problems more efficiently.
-                </p>
-              </motion.div>
-              
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg rounded-xl p-6 shadow-lg"
-              >
-                <div className="text-4xl mb-4">🎨</div>
-                <h4 className="text-xl font-semibold mb-2">AI-Generated Design</h4>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Creating stunning visuals and user experiences with AI-powered 
-                  design tools and generative algorithms.
-                </p>
-              </motion.div>
-            </div>
           </div>
-        </motion.div> */}
+        </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 
