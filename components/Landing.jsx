@@ -128,7 +128,7 @@ const Landing = () => {
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
               className="absolute top-2 right-2 sm:-top-4 sm:-right-4 w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold shadow-lg"
             >
-              AI
+              DEV
             </motion.div>
             
             <motion.div
