@@ -2,23 +2,6 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-import html from "../public/assets/experience/html.png";
-import css from "../public/assets/experience/css.png";
-import javascript from "../public/assets/experience/javascript.png";
-import reactImage from "../public/assets/experience/react.png";
-import nextjs from "../public/assets/experience/nextjs.png";
-import tailwind from "../public/assets/experience/tailwind.png";
-import graphql from "../public/assets/experience/graphql.png";
-import node from "../public/assets/experience/node.png";
-import bootstrap from "../public/assets/experience/bootstrap.png";
-import express from "../public/assets/experience/express.png";
-import mongo from "../public/assets/experience/mongo.png";
-import postgre from "../public/assets/experience/postgre.png";
-import svelte from "../public/assets/experience/svelte.png";
-import angular from "../public/assets/experience/angular.png";
-import vue from "../public/assets/experience/vue.png";
-import php from "../public/assets/experience/php.png";
-
 import { TypingText, TitleText } from "./CustomText";
 import styles from "../styles";
 import { staggerContainer } from "../utils/motion";
@@ -27,91 +10,91 @@ const skills = [
   {
     id: 1,
     name: "HTML",
-    src: html,
+    src: "/assets/experience/html.png",
     category: "Frontend"
   },
   {
     id: 2,
     name: "CSS",
-    src: css,
+    src: "/assets/experience/css.png",
     category: "Frontend"
   },
   {
     id: 3,
     name: "JavaScript",
-    src: javascript,
+    src: "/assets/experience/javascript.png",
     category: "Frontend"
   },
   {
     id: 4,
     name: "React",
-    src: reactImage,
+    src: "/assets/experience/react.png",
     category: "Frontend"
   },
   {
     id: 5,
     name: "Next JS",
-    src: nextjs,
+    src: "/assets/experience/nextjs.png",
     category: "Frontend"
   },
   {
     id: 6,
     name: "Tailwind",
-    src: tailwind,
+    src: "/assets/experience/tailwind.png",
     category: "Frontend"
   },
   {
     id: 7,
     name: "GraphQL",
-    src: graphql,
+    src: "/assets/experience/graphql.png",
     category: "Backend"
   },
   {
     id: 8,
     name: "Node JS",
-    src: node,
+    src: "/assets/experience/node.png",
     category: "Backend"
   },
   {
     id: 9,
     name: "Bootstrap",
-    src: bootstrap,
+    src: "/assets/experience/bootstrap.png",
     category: "Frontend"
   },
   {
     id: 10,
     name: "Svelte",
-    src: svelte,
+    src: "/assets/experience/svelte.png",
     category: "Frontend"
   },
   {
     id: 13,
     name: "Angular",
-    src: angular,
+    src: "/assets/experience/angular.png",
     category: "Frontend"
   },
   {
     id: 14,
     name: "Vue",
-    src: vue,
+    src: "/assets/experience/vue.png",
     category: "Frontend"
   },
   {
     id: 15,
     name: "PHP",
-    src: php,
+    src: "/assets/experience/php.png",
     category: "Backend"
   },
   {
     id: 11,
     name: "MongoDB",
-    src: mongo,
+    src: "/assets/experience/mongo.png",
     category: "Database"
   },
   {
     id: 12,
     name: "PostgreSQL",
-    src: postgre,
+    src: "/assets/experience/postgre.png",
     category: "Database"
   },
 ];
