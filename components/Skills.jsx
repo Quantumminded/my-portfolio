@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 import { TypingText, TitleText } from "./CustomText";
 import styles from "../styles";
@@ -119,13 +118,12 @@ const SkillCard = ({ skill, index }) => {
       <div className="relative bg-white dark:bg-gray-800 rounded-2xl p-4 sm:p-6 shadow-lg border border-gray-100 dark:border-gray-700 group-hover:border-indigo-300 dark:group-hover:border-indigo-500 transition-all duration-300 h-full flex flex-col items-center justify-center text-center">
         {/* Icon container */}
         <div className="mb-3 sm:mb-4 relative">
-          <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/30 dark:to-purple-900/30 flex items-center justify-center p-2.5 sm:p-3 group-hover:rotate-6 transition-transform duration-300">
-            <Image
+          <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/30 dark:to-purple-900/30 flex items-center justify-center p-2.5 sm:p-3 group-hover:rotate-6 transition-transform duration-300 overflow-hidden">
+            <img
               src={skill.src}
-              width={48}
-              height={48}
               alt={skill.name}
-              className="group-hover:scale-110 transition-transform duration-300"
+              className="h-10 w-10 object-contain group-hover:scale-110 transition-transform duration-300"
+              loading="lazy"
             />
           </div>
         </div>
