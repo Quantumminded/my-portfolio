@@ -17,17 +17,16 @@ export const exploreWorlds = [
     },
     {
       id: '2',
-      imgUrl: '/pokedex.png',
-      title: 'Pokedex',
-      url: "https://sparkling-manatee-860534.netlify.app/",
+      imgUrl: '/assets/portfolio/marvellion.png',
+      title: 'Marvellion',
+      url: "https://chefly-neon.vercel.app//",
       stack: [
-        { name: 'React', imgUrl: '/react.png' },
+        { name: 'Svelte', imgUrl: '/svelte.png' },
         { name: 'JavaScript', imgUrl: '/javascript.png' },
-        { name: 'Node.js', imgUrl: '/node.png' },
         { name: 'Tailwind', imgUrl: '/tailwind.png' },
         ],
-      git: "https://github.com/AdaN6/PokeFight_frontend",
-      description: "Pokédex built with React + Tailwind and a Node/Express API. Browse Pokémon with up‑to‑date stats and abilities, with fast search and filters.",
+      git: "https://github.com/Quantumminded/Chefly",
+      description: "I developed Chefly, a web platform that connects users with luxury private chefs for events and private dining experiences. The project was built using Svelte and Tailwind CSS, focusing on performance, clean UI, and responsive design.",
     },
     {
       id: '3',
