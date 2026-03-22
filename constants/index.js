@@ -30,16 +30,17 @@ export const exploreWorlds = [
     },
     {
       id: '3',
-      imgUrl: '/todos.png',
-      title: 'Todos List',
-      url: "https://to-dos-listss.netlify.app/",
+      imgUrl: '/do-your-stuff.jpg',
+      title: 'Do Your Stuff',
+      url: "https://do-your-stuff-eta.vercel.app/",
       stack: [
-        { name: 'JavaScript', imgUrl: '/javascript.png' },
-        { name: 'HTML', imgUrl: '/html.png' },
-        { name: 'CSS', imgUrl: '/css.png' },
+        { name: 'React', imgUrl: '/react.png' },
+        { name: 'TypeScript', imgUrl: '/javascript.png' },
+        { name: 'Tailwind', imgUrl: '/tailwind.png' },
+        { name: 'Supabase', imgUrl: '/supabase.png' },
         ],
-      git: "https://github.com/Quantumminded/To-do-list",
-      description: "Lightweight to‑do app in vanilla JS (HTML/CSS/JS). Add, complete, and delete tasks with localStorage persistence.",
+      git: "https://github.com/Quantumminded/do-your-stuff",
+      description: "Interactive web app for managing household missions and rewards for kids. Parents can create custom missions with coin and XP rewards, while children complete them to unlock prizes. It includes secure authentication and real-time data persistence with Supabase.",
     },
     {
       id: '4',
@@ -98,6 +99,19 @@ export const exploreWorlds = [
         ],
       git: "https://github.com/Quantumminded/Expense-tracker",
       description: "React expense tracker using Context and useReducer. Add/remove transactions, set a budget, and filter to stay on top of spending.",
+    },
+    {
+      id: '8',
+      imgUrl: '/todos.png',
+      title: 'Todos List',
+      url: "https://to-dos-listss.netlify.app/",
+      stack: [
+        { name: 'JavaScript', imgUrl: '/javascript.png' },
+        { name: 'HTML', imgUrl: '/html.png' },
+        { name: 'CSS', imgUrl: '/css.png' },
+        ],
+      git: "https://github.com/Quantumminded/To-do-list",
+      description: "Lightweight to‑do app in vanilla JS (HTML/CSS/JS). Add, complete, and delete tasks with localStorage persistence.",
     },
 
   ];
