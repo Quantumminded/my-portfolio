@@ -113,6 +113,19 @@ export const exploreWorlds = [
       git: "https://github.com/Quantumminded/To-do-list",
       description: "Lightweight to‑do app in vanilla JS (HTML/CSS/JS). Add, complete, and delete tasks with localStorage persistence.",
     },
+    {
+      id: '9',
+      imgUrl: '/assets/portfolio/luino-home-care.png',
+      title: 'Luino Home Care',
+      url: "https://home-care-rose.vercel.app/",
+      stack: [
+        { name: 'React', imgUrl: '/react.png' },
+        { name: 'Tailwind', imgUrl: '/tailwind.png' },
+        { name: 'Supabase', imgUrl: '/supabase.png' },
+        ],
+      git: "",
+      description: "I developed Luino Home Care, a bilingual lead generation website for a luxury property management concierge service targeting German and Swiss second-home owners at Lake Maggiore, Italy. The project was built using React and Tailwind CSS, focusing on smooth animations, internationalization, and conversion optimization.",
+    },
 
   ];
   
